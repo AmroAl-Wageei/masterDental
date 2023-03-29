@@ -24,6 +24,13 @@
          @enderror
         </div>
         <div class="form-group">
+          <label for="exampleInputUsername1">Price</label>
+          <input type="text" class="form-control" id="exampleInputUsername1" placeholder="price"  name="price" placeholder="Enter price" value="{{ old('price')}}" class="@error('price') is-invalid @enderror">
+          @error('price')
+          <div class="alert alert-danger">{{ $message }}</div>
+         @enderror
+        </div>
+        <div class="form-group">
           <label for="exampleInputEmail1">Description </label>
           <input type="text" class="form-control" id="exampleInputEmail1" placeholder="description" name="description" placeholder="Enter  description" value="{{ old('description')}}" class="@error('description') is-invalid @enderror">
           @error('description')

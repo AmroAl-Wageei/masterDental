@@ -28,6 +28,7 @@
             <th> ID </th>
             <th> Image </th>
             <th>  Name </th>
+            <th> Price </th>
             <th> Description </th>
           </tr>
         </thead>
@@ -42,6 +43,7 @@
             </td>
             <td> {{$value->name}} </td>
           
+            <td>  {{$value->price}} </td>
             <td>  {{$value->description}} </td>
 
           

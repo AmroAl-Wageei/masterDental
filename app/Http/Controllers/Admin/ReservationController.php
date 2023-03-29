@@ -3,20 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Service;
 use Illuminate\Http\Request;
 
-class ServicesController extends Controller
+class ReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+  
     public function index()
     {
-        $data = Service::all();
-
-        return view('Admin.pages.admin.servicesTable.show',['data'=>$data]);
-
+        //
     }
 
     /**
@@ -24,8 +22,7 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.admin.servicesTable.create'); 
-
+        //
     }
 
     /**
@@ -33,24 +30,7 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string', 'max:255'],
-            'price' => ['required', 'max:255'],
-            'image' => ['required','image','mimes:jpg,png,jpeg,gif','max:2048'],
-        ]);
-
-        $photoName = $request->file('image')->getClientOriginalName();
-        $request->file('image')->storeAs('public/image', $photoName);
-        Service::create([
-            'name' => $request->name,
-            'description' => $request->description,
-            'price' => $request->price,
-            'image' => $photoName,
-        ]);
-
-        return redirect()->route('admin.services.index');
-
+        //
     }
 
     /**
