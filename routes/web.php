@@ -80,6 +80,7 @@ Route::middleware(['auth', 'verified', 'admin'])->name('admin.')->prefix('admin'
     Route::resource('/users',UserController::class);
     Route::resource('/admins', AdminController::class);
     Route::get('/logout',[LogoutController::class,'destroy'])->name('logout');
+    Route::resource('/services',ServicesController::class);
 
 
     
@@ -110,6 +111,5 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::get('/login/destroy', [LoginUserController::class, 'destroy'])->name('login.destroy');
     Route::resource('/contact',ContactController::class);
     Route::resource('/trainee',TraineeController::class);
-    Route::resource('/services',ServicesController::class);
 
 });

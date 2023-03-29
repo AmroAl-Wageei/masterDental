@@ -15,7 +15,7 @@
 
             <h4 class="card-title">Striped Table</h4>
             <div>
-                <a href="{{Route('admin.admins.create')}}"><button type="submit" class="btn btn-block bg-gradient-success btn-sm">Add admin</button></a>
+                <a href="{{Route('admin.services.create')}}"><button type="submit" class="btn btn-block bg-gradient-success btn-sm">Add services</button></a>
 
             </div>
         </div>

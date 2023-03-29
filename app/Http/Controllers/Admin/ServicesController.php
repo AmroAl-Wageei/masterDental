@@ -15,7 +15,7 @@ class ServicesController extends Controller
     {
         $data = Service::all();
 
-        return view('Admin.pages.admin.serviceTable.show',['data'=>$data]);
+        return view('Admin.pages.admin.servicesTable.show',['data'=>$data]);
 
     }
 
@@ -24,7 +24,8 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.admin.servicesTable.create'); 
+
     }
 
     /**
@@ -34,8 +35,8 @@ class ServicesController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string', 'email', 'max:255'],
-            'image' => ['required','string'],
+            'description' => ['required', 'string', 'max:255'],
+            'image' => ['required','image','mimes:jpg,png,jpeg,gif','max:2048'],
         ]);
         Service::create([
             'name' => $request->name,
