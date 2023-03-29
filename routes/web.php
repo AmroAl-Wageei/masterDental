@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\LogoutController;
+use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\User\TraineeController;
 use App\Http\Controllers\User\ContactController;
@@ -109,5 +110,6 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::get('/login/destroy', [LoginUserController::class, 'destroy'])->name('login.destroy');
     Route::resource('/contact',ContactController::class);
     Route::resource('/trainee',TraineeController::class);
+    Route::resource('/services',ServicesController::class);
 
 });
