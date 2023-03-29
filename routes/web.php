@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\LogoutController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\User\TraineeController;
 use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\LoginUserController;
 use App\Http\Controllers\User\RegisterUserController;
@@ -107,5 +108,6 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::get('/register_engineer/store', [RegisterEngineerController::class, 'store'])->name('register_engineer.store');
     Route::get('/login/destroy', [LoginUserController::class, 'destroy'])->name('login.destroy');
     Route::resource('/contact',ContactController::class);
+    Route::resource('/trainee',TraineeController::class);
 
 });

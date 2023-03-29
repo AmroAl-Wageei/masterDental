@@ -3,19 +3,19 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
+use App\Models\Trainee;
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class TraineeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = Contact::all();
+        $data = Trainee::all();
 
-        return view('Admin.pages.admin.contact',['data'=>$data]);
+        return view('Admin.pages.admin.trainee',['data'=>$data]);
     }
 
     /**
@@ -32,22 +32,20 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'phone' => ['required', 'max:10'],
-            'message' => ['required','string'],
+            'intrest' => ['required','string'],
         ]);
-        Contact::create([
-            'first_name' => $request->first_name,
-            'last_name' => $request->last_name,
+        Trainee::create([
+            'name' => $request->name,
             'email' => $request->email,
-            'phoneNumber' => $request->phone,
-            'message' => $request->message,
+            'phone' => $request->phone,
+            'intrest' => $request->intrest,
 
         ]);
 
-        return redirect()->route('contact');
+        return redirect()->route('home');
     }
 
     /**

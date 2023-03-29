@@ -368,14 +368,28 @@
             <h1> New Patient </h1>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipi.</p>
             <div class="form">
-                <form action="book" method="post">
-                    <input type="text" name="" id="" placeholder="User Name">
-                    <input type="email" name="" id="" placeholder=" Email">
-                    <input type="text" name="" id="" placeholder="Phone Number">
+                <form action="{{Route('user.trainee.store')}}" method="post">
+                    @csrf
+                    <input type="text" name="name" id="" placeholder="User Name" value="{{ old('name')}}" class="@error('name') is-invalid @enderror">
+                    @error('name')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
+                    <input type="email" name="email" id="" placeholder=" Email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
+                    @error('email')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
+                    <input type="text" name="phone" id="" placeholder="Phone Number" value="{{ old('phone')}}" class="@error('phone') is-invalid @enderror">
+                    @error('phone')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
+                    <input type="text" name="intrest" id="" placeholder="Inter your intrest" value="{{ old('intrest')}}" class="@error('intrest') is-invalid @enderror">
+                    @error('intrest')
+                    <div class="error">{{ $message }}</div>
+                    @enderror
+                    <div class="btn_book">
+                        <button type="submit">Send Request</button>
+                    </div>
                 </form>
-                <div class="btn_book">
-                    <button>Send Request</button>
-                </div>
                 <div class="old_Patient">
                     Not a New Patient? <a href=""> 
                         Book Now
