@@ -38,13 +38,16 @@ class ServicesController extends Controller
             'description' => ['required', 'string', 'max:255'],
             'image' => ['required','image','mimes:jpg,png,jpeg,gif','max:2048'],
         ]);
+
+        $photoName = $request->file('image')->getClientOriginalName();
+        $request->file('image')->storeAs('public/image', $photoName);
         Service::create([
             'name' => $request->name,
             'description' => $request->description,
-            'image' => $request->email,
+            'image' => $photoName,
         ]);
 
-        return redirect()->route('contact');
+        return redirect()->route('admin.services.index');
 
     }
 
