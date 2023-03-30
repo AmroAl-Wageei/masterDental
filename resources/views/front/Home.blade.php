@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" This is website for dental clinic in aqaba country ">
-    <meta name="author" content=" Amro Salah  Al - Wageei">
+    <meta name="author" content=" Amro Salah Al - Wageei">
     <meta name=" Keyword " content=" dentist , clinic , Aqaba , jordan , braces , dentist near me ">
     <meta name="Copyright" content=" Orange Coding Academy . Designed by Amro Al - Wageei ">
     <meta name="refresh" content=" 1 ">
@@ -13,22 +13,42 @@
 
      <!-- Title Icon   -->
      <link rel="icon" href="images/aamro.png" type="image/icon type" />
+     <!-- Title Icon   -->
+
      <!-- Link CSS -->
      <link rel="stylesheet" href="{{ asset('CSS/style.css')}}">
+     <!-- Link CSS -->
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Boxicons CSS -->
+
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="{{ asset('CSS/swiper-bundle.min.css')}}">
+     <!-- Swiper CSS -->
+
      <!-- Font Awesome -->
      <script
-       src="https://kit.fontawesome.com/3692f58ddc.js"
-       crossorigin="anonymous"
+     src="https://kit.fontawesome.com/3692f58ddc.js"
+     crossorigin="anonymous"
      ></script>
+     <!-- Font Awesome -->
+
      <!-- Google Font -->
      <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <!-- Google Font -->
+
      <!-- Font Awesome 5 fixed  -->
      <script
-       src="https://kit.fontawesome.com/a076d05399.js"
-       crossorigin="anonymous"
+     src="https://kit.fontawesome.com/a076d05399.js"
+     crossorigin="anonymous"
      ></script>
+     <!-- Font Awesome 5 fixed  -->
+
      <!-- JQUERY  -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <!-- JQUERY  -->
+
 
     <style>
 
@@ -69,16 +89,16 @@
 
 <div class="fixed_nav">
     <ul>
-        <li><a href="#">
+        <li><a href="{{route('book')}}">
+                <i class="fa-duotone fa-phone-volume"></i> <span> Book Now </span>
+        </a></li>
+        <li><a href="{{route('contact')}}">
                 <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
         </a></li>
-        <li><a href="#">
-                <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
+        <li><a href="{{route('book')}}">
+                <i class="fa-duotone fa-phone-volume"></i> <span> Book Now </span>
         </a></li>
-        <li><a href="#">
-                <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
-        </a></li>
-        <li><a href="#">
+        <li><a href="{{route('contact')}}">
                 <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
         </a></li>
     </ul>
@@ -104,7 +124,7 @@
             <div class="txt one">
                 <h1>Dr . Abdalmajed Shandaq </h1><br>
                 <h2> Where Science Meets Arts.</h2><br>
-                <a href=""><button> Book Now </button></a>
+                <a href="{{route('book')}}"><button> Book Now </button></a>
             </div>    
           <img src="../images/header/slide1.jpg" alt="img1" style="width: 100%; height: 100%;">
         </div>
@@ -114,7 +134,7 @@
                 <h1>WE CARE ABOUT YOUR SMILE</h1>
                 <P> We offer you a distinguished treatment with the latest <br> medical tools and supplies,
                     as our clinic meets the best <br>standards of quality and public safety.</P><br>
-                    <a href=""><button> Book Now </button></a>
+                    <a href="{{route('book')}}"><button> Book Now </button></a>
             </div>    
           <img src="../images/header/slide2.jpg" alt="img1" style="width: 100%; height: 100%;">
         </div>
@@ -123,7 +143,7 @@
             <div class="txt three">
                 <h1>You deserve the best  </h1><br>
                 <h2>  We make smile a healthier , brighter <br>and more beautifull smile.</h2><br>
-                <a href=""><button> Book Now </button></a>
+                <a href="{{route('book')}}"><button> Book Now </button></a>
             </div>    
           <img src="../images/header/slide3.jpg" alt="img1" style="width: 100%; height: 100%;">
         </div>
@@ -182,14 +202,15 @@
 
 <section class="about_dr">
     <div class="main_dr">
-        <img src="../images/header/About/AboutDr.jpg" alt="">
+       
+        <img src=" {{asset('images/header/About/AboutDr.jpg')}}" alt="">
         <div class="all-text">
             <h4> Dr . Abdalmajed Shandaq</h4>
             <h1>A certified dental surgeon locally and internationally.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit quis consequuntur alias? Debitis tempore minima suscipit corrupti corporis, doloremque optio placeat nihil ab ad dolore deserunt voluptatem est soluta.</p>
             <div class="btn_dr">
-                <a href="./Html/AboutUs.html"></a><button type="button"> Our Team </button>
-                <button type="button" class="btn2"> Learn More </button>
+                <a href=".{{route('about')}}"></a><button type="button"> Our Team </button>
+                <a href="{{route('book')}}"><button type="button" class="btn2"> Learn More </button></a>
             </div>
         </div>
     </div>
@@ -239,14 +260,14 @@
         <div class="mission2"> 
     
             <div class="img one"> 
-                <img src="../images/header/About/vission.jpg" alt="">
+                <img src="{{asset('images/header/About/vission.jpg')}} " alt="VissionOne">
             </div>
             <div></div>
     
             <div></div>
 
             <div class="img two">
-                <img src="../images/header/About/vission1.png" alt="">
+                <img src="{{asset('images/header/About/vission1.png')}}" alt="VissionTwo">
             </div>
 
         </div>
@@ -350,7 +371,7 @@
 
     <h1> Be kind to your dentist. Because he has “fillings” too.<br> Be the reason someone <span> SMILES</span> today!
     </h1>
-    <a href="" class="action_btn"> Book Now </a>
+    <a href="{{route('book')}}" class="action_btn"> Book Now </a>
 </section>
 
 <!-- End Call to action book  -->
@@ -391,7 +412,7 @@
                     </div>
                 </form>
                 <div class="old_Patient">
-                    Not a Trainee? <a href=""> 
+                    Not a Trainee? <a href="{{route('book')}}"> 
                         Book Now
                     </a>
                 </div>
@@ -429,7 +450,7 @@
 
     <div class="card">
         <div class="card_img">
-        <img src="../images/header/Happy_Client/girl1.png" alt="">
+        <img src="{{asset('images/header/Happy_Client/girl1.png')}}" alt="">
         </div>
         <div class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
@@ -438,7 +459,7 @@
 
     <div class="card">
         <div class="card_img">
-        <img src="../images/header/Happy_Client/men1.png" alt="">
+        <img src="{{asset('images/header/Happy_Client/men1.png')}}" alt="">
         </div>
         <div class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
@@ -447,7 +468,7 @@
 
     <div class="card">
         <div class="card_img">
-        <img src="../images/header/Happy_Client/men3.jpg" alt="">
+        <img src="{{asset('images/header/Happy_Client/men3.jpg')}}" alt="">
         </div>
         <div class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
@@ -456,7 +477,7 @@
 
     <div class="card">
         <div class="card_img">
-        <img src="../images/header/Happy_Client/girl2.png" alt="">
+        <img src="{{asset('images/header/Happy_Client/girl2.png')}}" alt="">
         </div>
         <div class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
@@ -465,7 +486,7 @@
 
     <div class="card">
         <div class="card_img">
-        <img src="../images/header/Happy_Client/men2.jpg" alt="">
+        <img src="{{asset('images/header/Happy_Client/men2.jpg')}}" alt="">
         </div>
         <div class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
@@ -477,6 +498,69 @@
 <!-- HAPPY CLIENT -->
 
 
+
+{{-- Review  --}}
+
+
+{{-- <section class="review">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slideReview swiper-slide">
+          <img src="{{asset('images/users/1.png')}}" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Marnie Lotter</span>
+            <span class="job">Web Developer</span>
+          </div>
+        </div>
+        <div class="slideReview swiper-slide">
+          <img src="{{asset('images/users/3.png')}}" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Marnie Lotter</span>
+            <span class="job">Web Developer</span>
+          </div>
+        </div>
+        <div class="slideReview swiper-slide">
+          <img src="{{asset('images/users/2.png')}}" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">Marnie Lotter</span>
+            <span class="job">Web Developer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section> --}}
+
+{{-- Review  --}}
 
 
 
@@ -528,14 +612,21 @@
 
 
     <!-- Scroll to top -->
-    <span class="up"> <i class="fa-solid fa-arrow-up"></i></span>
-    <!-- Icon whatsapp -->
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-31bee8e4-a299-4036-bbda-e1b2d0331bd3"></div>
+        <span class="up"> <i class="fa-solid fa-arrow-up"></i></span>
+    <!-- Scroll to top -->
+
+    <!-- ICON WHATSAPP -->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-31bee8e4-a299-4036-bbda-e1b2d0331bd3"></div>
+    <!-- ICON WHATSAPP -->
 
 
-    <script src="./JS/slider.js"> </script>
-    <script src="../JS/scrollUp.js"> </script>
+    {{-- JS External Link --}}
+        <script src="{{asset('JS/review.js')}}"> </script>
+        <script src="{{asset('JS/slider.js')}}"> </script>
+        <script src="{{asset('JS/scrollUp.js')}}"> </script>
+    {{-- JS External Link --}}
+
 
 </body>
 </html>
