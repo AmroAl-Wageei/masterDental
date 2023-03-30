@@ -42,8 +42,13 @@ class HomeController extends Controller
 
     }
 
-    public function charts()
-    {
+    // public function charts()
+    // {
+    //     $totalAllUser = User::count();
+    //     $totalUser = User::where('role', 'user')->count();
+    //     $totalAdmin = User::where('role', 'admin')->count();
+        
+    //     return view('Admin.pages.admin.dashboard', ['totalUser' => $totalUser, 'totalAllUser' => $totalAllUser, 'totalAdmin' => $totalAdmin]);
 
-    }
+    // }
 }

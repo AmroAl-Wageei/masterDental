@@ -1,11 +1,11 @@
 //Prouduct Chart
 
 const dataProduct = {
-    labels: ["Positive", "Negative"],
+    labels: ["All User", "Admin", "Users"],
     datasets: [
         {
             label: "",
-            data: [51, 49],
+            data: [10, 50, 30],
             backgroundColor: [
                 "rgba(255, 26, 104, 0.2)",
                 "rgba(54, 162, 235, 0.2)",
