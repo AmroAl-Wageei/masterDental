@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use App\Models\Contact;
 use App\Models\Reservation;
 use App\Models\Service;
 use App\Models\Trainee;
+use App\Models\User;
 use Carbon\Carbon;
 
 class HomeController extends Controller
@@ -39,6 +39,11 @@ class HomeController extends Controller
         // dd($totalAllUser);
 
         return view('Admin.pages.admin.dashboard', ['totalUser' => $totalUser, 'totalAllUser' => $totalAllUser, 'totalAdmin' => $totalAdmin, 'totalServices' => $totalServices, 'totalContact' => $totalContact, 'totalTrainee' => $totalTrainee, 'totalReservation' => $totalReservation, 'todayReservation' => $todayReservation, 'thisMonthReservation' => $thisMonthReservation, 'thisYearReservation' => $thisYearReservation]);
+
+    }
+
+    public function charts()
+    {
 
     }
 }

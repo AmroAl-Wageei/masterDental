@@ -21,6 +21,10 @@
         <!-- Title Icon   -->
         <link rel="icon" href="{{asset('images/aamro.png')}}" type="image/icon type" />
         <!-- Title Icon   -->
+        <!-- Chart Js -->
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels.js"></script>
+        <!-- Chart Js -->
   </head>
   <body>
 
@@ -95,5 +99,18 @@
     <!-- Custom js for this page -->
     <script src="{{asset('assets/js/file-upload.js')}}"></script>
     <!-- End custom js for this page -->
+
+    
+
+
+
+    {{-- JS External Link --}}
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+        <script src="{{asset('assets\js\chartNew.js')}}"></script>
+    {{-- JS External Link --}}
+
+
   </body>
 </html>
