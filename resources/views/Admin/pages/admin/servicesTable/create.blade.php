@@ -1,7 +1,7 @@
 
 @extends('Admin.layouts.admin.app')
 
-@section('title' , 'Dashboard')
+@section('title' , 'Create Services')
     
 
 @section('content')
@@ -12,8 +12,8 @@
 <div class="col-md-6 grid-margin stretch-card">
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Default form</h4>
-      <p class="card-description"> Basic form layout </p>
+      <h4 class="card-title">Create New Services </h4>
+      {{-- <p class="card-description"> Basic form layout </p> --}}
       <form class="forms-sample"  action="{{route('admin.services.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">

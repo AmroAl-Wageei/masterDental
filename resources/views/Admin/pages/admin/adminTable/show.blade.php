@@ -1,7 +1,7 @@
 
 @extends('Admin.layouts.admin.app')
 
-@section('title' , 'Dashboard')
+@section('title' , 'Admins')
     
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="card-body">
         <div style="display: flex;justify-content:space-between">
 
-            <h4 class="card-title">Striped Table</h4>
+            <h4 class="card-title">All Admins Table</h4>
             <div>
                 <a href="{{Route('admin.admins.create')}}"><button type="submit" class="btn btn-block bg-gradient-success btn-sm">Add admin</button></a>
 

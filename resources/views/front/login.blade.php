@@ -47,13 +47,13 @@
                 @csrf
 
                 {{-- Email --}}
-                <input type="email" name="email" class="@error('email') is-invalid @enderror" value="{{ old('email')}}">
+                <input type="email" name="email" class="@error('email') is-invalid @enderror" value="{{ old('email')}}" placeholder="Email">
                     @error('email')
                         <div class="error">{{ $message }}</div>
                     @enderror
                
                {{-- Password --}}
-               <input type="password" name="password" class="@error('password') is-invalid @enderror" value="{{ old('password')}}">
+               <input type="password" name="password" class="@error('password') is-invalid @enderror" value="{{ old('password')}}" placeholder="Password">
                     @error('password')
                     <div class="error">{{ $message }}</div>
                     @enderror

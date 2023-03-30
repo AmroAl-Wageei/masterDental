@@ -18,10 +18,13 @@
           </div>
   
           <div class="social">
-            <i class="fab fa-facebook-f icon"></i>
-            <i class="fab fa-instagram icon"></i>
-            <i class="fab fa-twitter icon"></i>
-            <i class="fab fa-youtube icon"></i>
+            <a href="https://www.facebook.com/profile.php?id=100012890643589"><i class="fab fa-facebook-f icon"></i></a>
+            <a href="https://www.instagram.com/shandaqamro7/"><i class="fab fa-instagram icon"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter icon"></i></a>
+            <a href="https://www.youtube.com/"> <i class="fab fa-youtube icon"></i></a>
+            
+            
+           
           </div>
         </div>
       </section>
@@ -38,7 +41,7 @@
         <a href="{{ route('artical') }}">Artical</a>
         <a href="{{ route('book') }}">Book Now</a>
         @if(Auth::user())
-        <a href="{{route('user.login.destroy')}}"  id="navr">logout</a>
+        <a href="{{route('user.login.destroy')}}"  id="navr">LOGOUT</a>
         <a href=""  id="navr">ACCOUNT</a>
           @else 
           <a href="{{ route('register') }}" id="navr">Sgin Up </a>

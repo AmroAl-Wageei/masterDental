@@ -1,7 +1,7 @@
 
 @extends('Admin.layouts.admin.app')
 
-@section('title' , 'Dashboard')
+@section('title' , 'Services')
     
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="card-body">
         <div style="display: flex;justify-content:space-between">
 
-            <h4 class="card-title">Striped Table</h4>
+            <h4 class="card-title">All Services Table</h4>
             <div>
                 <a href="{{Route('admin.services.create')}}"><button type="submit" class="btn btn-block bg-gradient-success btn-sm">Add services</button></a>
 

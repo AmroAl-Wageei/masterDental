@@ -365,8 +365,8 @@
 
     <div class="about_book">
         <div class="inner_about">
-            <h1> New Patient </h1>
-            <p class="text">Lorem ipsum dolor sit, amet consectetur adipi.</p>
+            <h1> Trainee Form </h1>
+            <p class="text">Train with us under excellent hands and experiences.</p>
             <div class="form">
                 <form action="{{Route('user.trainee.store')}}" method="post">
                     @csrf
@@ -391,7 +391,7 @@
                     </div>
                 </form>
                 <div class="old_Patient">
-                    Not a New Patient? <a href=""> 
+                    Not a Trainee? <a href=""> 
                         Book Now
                     </a>
                 </div>

@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{asset('assets/images/LogoIcon.png')}}"/>
+        <!-- Title Icon   -->
+        <link rel="icon" href="{{asset('images/aamro.png')}}" type="image/icon type" />
+        <!-- Title Icon   -->
   </head>
   <body>
 
@@ -71,6 +74,14 @@
 
 
 
+
+    <!-- Scroll to top -->
+    <span class="up"> <i class="fa-solid fa-arrow-up"></i></span>
+    <!-- Scroll to top -->
+
+    <!--  Scroll and Slid Up -->
+    <script src="{{asset('JS/scrollUp.js')}}"></script>
+    <!--  Scroll and Slid Up -->
     <!-- plugins:js -->
     <script src="{{asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->

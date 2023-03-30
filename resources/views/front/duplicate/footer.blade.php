@@ -10,12 +10,12 @@
             <div class="col_footer">
                 <h4> Company </h4>
                 <ul>
-                    <li><a href="./index.html"> Home </a></li>
-                    <li><a href="./Html/AboutUs.html"> About Us</a></li>
-                    <li><a href="./Html/ContactUs.html"> Contact Us</a></li>
-                    <li><a href="./Html/Artical.html"> Artical</a></li>
-                    <li><a href="./Html/Book.html"> Book </a></li>
-                    <li><a href="./Html/ComingSoon.html"> Our Services </a></li>
+                    <li><a href="{{route('home')}}"> Home </a></li>
+                    <li><a href=".{{route('about')}}"> About Us</a></li>
+                    <li><a href="{{route('contact')}}"> Contact Us</a></li>
+                    <li><a href="{{route('artical')}}"> Artical</a></li>
+                    <li><a href="{{route('home')}}"> Book </a></li>
+                    <li><a href="{{route('home')}}"> Our Services </a></li>
 
                 </ul>
             </div>
@@ -23,14 +23,14 @@
             <div class="col_footer">
                 <h4> Get help </h4>
                 <ul>
-                    <li><a href="#"> FAQ </a></li>
-                    <li><a href="#"> New Patient </a></li>
-                    <li><a href="#"> Returns </a></li>
-                    <li><a href="#"> Book Now </a></li>
-                    <li><a href="#"> Payment </a></li>
-                    <li><a href="./Login.html"> Login </a></li>
-                    <li><a href="./Register.html"> Register </a></li>
-                    <li><a href="./Html/profile.html"> User Profile </a></li>
+                    <li><a href="{{route('home')}}"> FAQ </a></li>
+                    <li><a href="{{route('home')}}"> New Trainee </a></li>
+                    <li><a href="{{route('home')}}"> Returns </a></li>
+                    <li><a href="{{route('book')}}"> Book Now </a></li>
+                    <li><a href="{{route('home')}}"> Payment </a></li>
+                    <li><a href="{{route('login')}}"> Login </a></li>
+                    <li><a href="{{route('register')}}"> Register </a></li>
+                    <li><a href="{{route('home')}}"> User Profile </a></li>
                 </ul>
             </div>
 
@@ -38,13 +38,13 @@
                 <h4> Work Hours </h4>
                     <div class="time_footer">
                         <ul>
-                            <li><a href="./Html/Book.html"> Saturday <span> 9 AM to 3:00 PM</span> </a></li>
-                            <li><a href="./Html/Book.html"> Sunday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="./Html/Book.html"> Monday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="./Html/Book.html"> Tuesday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="./Html/Book.html"> Wednesday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="./Html/Book.html"> Thursday <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="./Html/Book.html"> Friday  <span> OFF </span></a></li>
+                            <li><a href="{{route('book')}}"> Saturday <span> 9 AM to 3:00 PM</span> </a></li>
+                            <li><a href="{{route('book')}}"> Sunday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{route('book')}}"> Monday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{route('book')}}"> Tuesday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{route('book')}}"> Wednesday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{route('book')}}"> Thursday <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{route('book')}}"> Friday  <span> OFF </span></a></li>
                         </ul>
                     </div>
             </div>
@@ -54,10 +54,10 @@
                 <h4> Follow Us </h4>
 
                 <div class="socail_footer">  
-                    <a href="#"><i class="fa-brands fa-facebook"></i> </a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i>
+                    <a href="ttps://www.facebook.com/profile.php?id=100012890643589"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://www.instagram.com/shandaqamro7/"><i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#"><i class="fa-solid fa-at"></i></a>
+                    <a href="amro.wageei@outlook.com"><i class="fa-solid fa-at"></i></a>
                 </div>
 
                 <div class="qouat_footer">

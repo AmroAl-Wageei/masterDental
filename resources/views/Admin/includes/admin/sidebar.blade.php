@@ -72,6 +72,18 @@
 </li>
 <li class="nav-item">
     <a class="nav-link" href="../../pages/tables/basic-table.html">
+        <span class="menu-title">Articales</span>
+        <i class="mdi mdi-table-large menu-icon"></i>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="../../pages/tables/basic-table.html">
+        <span class="menu-title">Gallery</span>
+        <i class="mdi mdi-table-large menu-icon"></i>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="../../pages/tables/basic-table.html">
         <span class="menu-title"> Statistics </span>
         <i class="mdi mdi-table-large menu-icon"></i>
     </a>
