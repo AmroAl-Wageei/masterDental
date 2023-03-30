@@ -24,20 +24,22 @@
     <li class="nav-item">
         <a class="nav-link" href="{{route('admin.admins.index')}}">
             <span class="menu-title">Admin</span>
-            <i class="mdi mdi-home menu-icon"></i>
+            <i class="mdi mdi-account-circle menu-icon"></i>
+            {{-- <i class="mdi mdi-account-convert menu-icon"></i> --}}
+            {{-- <i class="mdi mdi-home menu-icon"></i> --}}
         </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{route('admin.users.index')}}">
             <span class="menu-title">Users</span>
-            <i class="mdi mdi-home menu-icon"></i>
+            <i class="mdi mdi-account-multiple menu-icon"></i>
         </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <span class="menu-title"> Reservation </span>
             <i class="menu-arrow"></i>
-            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            <i class="mdi mdi-calendar-clock menu-icon"></i>
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
@@ -49,7 +51,7 @@
 <li class="nav-item">
     <a class="nav-link" href="{{route('admin.services.index')}}">
         <span class="menu-title"> Services </span>
-        <i class="mdi mdi-contacts menu-icon"></i>
+        <i class="mdi mdi-tooth menu-icon"></i>
     </a>
 </li>
 <li class="nav-item">
@@ -61,19 +63,19 @@
 <li class="nav-item">
     <a class="nav-link" href="{{route('user.trainee.index')}}">
         <span class="menu-title">Trainee Form</span>
-        <i class="mdi mdi-chart-bar menu-icon"></i>
+        <i class="mdi mdi-format-list-bulleted-type menu-icon"></i>
     </a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="../../pages/tables/basic-table.html">
         <span class="menu-title">Review</span>
-        <i class="mdi mdi-table-large menu-icon"></i>
+        <i class="mdi mdi-chart-bar menu-icon"></i>
     </a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="../../pages/tables/basic-table.html">
         <span class="menu-title">Articales</span>
-        <i class="mdi mdi-table-large menu-icon"></i>
+        <i class="mdi mdi-book-open-variant menu-icon"></i>
     </a>
 </li>
 <li class="nav-item">
@@ -85,7 +87,7 @@
 <li class="nav-item">
     <a class="nav-link" href="../../pages/tables/basic-table.html">
         <span class="menu-title"> Statistics </span>
-        <i class="mdi mdi-table-large menu-icon"></i>
+        <i class="mdi mdi-chart-line menu-icon"></i>
     </a>
 </li>
 <li class="nav-item">
@@ -109,7 +111,7 @@
             <div class="border-bottom">
                 <h6 class="font-weight-normal mb-3">Projects</h6>
             </div>
-            <button class="btn btn-block btn-lg btn-gradient-primary mt-4 "  style=" background: linear-gradient(to right, #84d9d2, #07cdae);">+ Add a project</button>
+            <a href="{{route('admin.admins.create')}}"><button class="btn btn-block btn-lg btn-gradient-primary mt-4 "  style=" background: linear-gradient(to right, #84d9d2, #07cdae);">+ Add an Admin </button></a>
             <div class="mt-4">
                 <div class="border-bottom">
                     <p class="text-secondary">Categories</p>
