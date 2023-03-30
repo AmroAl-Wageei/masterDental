@@ -22,7 +22,7 @@
     <nav aria-label="breadcrumb">
       <ul class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page">
-          <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+          <span></span>Statistics <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
         </li>
       </ul>
     </nav>
@@ -33,9 +33,46 @@
       <div class="card bg-gradient-danger card-img-holder text-white">
         <div class="card-body">
           <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
-          <h4 class="font-weight-normal mb-3">Weekly Sales <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+          <h4 class="font-weight-normal mb-3"> Total All User  <i class="mdi mdi-account-multiple menu-icon"></i>
           </h4>
-          <h2 class="mb-5">$ 15,0000</h2>
+          <h2 class="mb-5">{{$totalAllUser}}</h2>
+          <h6 class="card-text"> View</h6>
+          {{-- <a href="{{url ('admin/users')}}" class="card-text"><h6 >View</h6></a> --}}
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-danger card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3">Total Users  <i class="mdi mdi-account-multiple menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$totalUser}}</h2>
+          <h6 class="card-text">Decreased by 10%</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-danger card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3">Total Admins <i class="mdi mdi-account-circle menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$totalAdmin}}</h2>
+          <h6 class="card-text">Increased by 5%</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-info card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3"> Total All Reservation <i class="mdi mdi-calendar-clock menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$todayReservation}}</h2>
           <h6 class="card-text">Increased by 60%</h6>
         </div>
       </div>
@@ -44,9 +81,44 @@
       <div class="card bg-gradient-info card-img-holder text-white">
         <div class="card-body">
           <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
-          <h4 class="font-weight-normal mb-3">Weekly Orders <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+          <h4 class="font-weight-normal mb-3"> Monthly Reservation <i class="mdi mdi-calendar-clock menu-icon"></i>
           </h4>
-          <h2 class="mb-5">45,6334</h2>
+          <h2 class="mb-5">{{$thisMonthReservation}}</h2>
+          <h6 class="card-text">Decreased by 10%</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-info card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3"> Yearly Reservation <i class="mdi mdi-calendar-clock menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$thisYearReservation}}</h2>
+          <h6 class="card-text">Increased by 5%</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-success card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3">Total Services <i class="mdi mdi-tooth menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$totalServices}}</h2>
+          <h6 class="card-text">Increased by 60%</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+      <div class="card bg-gradient-success card-img-holder text-white">
+        <div class="card-body">
+          <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
+          <h4 class="font-weight-normal mb-3"> Total Messages <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+          </h4>
+          <h2 class="mb-5">{{$totalContact}}</h2>
           <h6 class="card-text">Decreased by 10%</h6>
         </div>
       </div>
@@ -55,9 +127,9 @@
       <div class="card bg-gradient-success card-img-holder text-white">
         <div class="card-body">
           <img src="{{asset('assets/images/dashboard/circle.svg')}}" class="card-img-absolute" alt="circle-image" />
-          <h4 class="font-weight-normal mb-3">Visitors Online <i class="mdi mdi-diamond mdi-24px float-right"></i>
+          <h4 class="font-weight-normal mb-3"> Trainee Request <i class="mdi mdi-format-list-bulleted menu-icon"></i>
           </h4>
-          <h2 class="mb-5">95,5741</h2>
+          <h2 class="mb-5">{{$totalTrainee}}</h2>
           <h6 class="card-text">Increased by 5%</h6>
         </div>
       </div>

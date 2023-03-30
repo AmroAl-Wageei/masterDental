@@ -5,10 +5,10 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\LogoutController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\User\TraineeController;
 use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\LoginUserController;
 use App\Http\Controllers\User\RegisterUserController;
+use App\Http\Controllers\User\TraineeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -74,16 +74,14 @@ Route::get('register', function () {
 
 // ADMIN
 
+
 Route::middleware(['auth', 'verified', 'admin'])->name('admin.')->prefix('admin')->group(function () {
 
-    Route::get('/', [HomeController::class, 'dashboard'])->name('admin');
-    Route::resource('/users',UserController::class);
+    Route::get('/', [HomeController::class, 'index'])->name('admin');    Route::resource('/users', UserController::class);
     Route::resource('/admins', AdminController::class);
-    Route::get('/logout',[LogoutController::class,'destroy'])->name('logout');
-    Route::resource('/services',ServicesController::class);
+    Route::get('/logout', [LogoutController::class, 'destroy'])->name('logout');
+    Route::resource('/services', ServicesController::class);
 
-
-    
 });
 
 // ######################################################################
@@ -101,7 +99,6 @@ Route::prefix('user')->name('user.')->group(function () {
         return view('publicUser.registerPage');
     })->name('register');
 
-
     Route::get('/login', [LoginUserController::class, 'index'])->name('login');
     Route::get('/login/check', [LoginUserController::class, 'LoginPost'])->name('login.check');
     Route::get('/register_user', [RegisterUserController::class, 'index'])->name('register_user');
@@ -109,7 +106,7 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::get('/register_engineer', [RegisterEngineerController::class, 'index'])->name('register_engineer');
     Route::get('/register_engineer/store', [RegisterEngineerController::class, 'store'])->name('register_engineer.store');
     Route::get('/login/destroy', [LoginUserController::class, 'destroy'])->name('login.destroy');
-    Route::resource('/contact',ContactController::class);
-    Route::resource('/trainee',TraineeController::class);
+    Route::resource('/contact', ContactController::class);
+    Route::resource('/trainee', TraineeController::class);
 
 });
