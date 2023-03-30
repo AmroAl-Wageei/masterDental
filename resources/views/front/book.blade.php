@@ -76,36 +76,73 @@
                 <p> Let's start to booking now!</p>
             </div>
     
-    
-            <form class="body_box" action="#" method="post">
-    
+    {{-- {{dd($services)}} --}}
+            <form class="body_box" action="{{Route('user.booking.store')}}" method="post">
+                @csrf
                 <div class="row_book">
     
-                    <div class="col-6">
-                        <p>Your Name</p>
-                        <input type="text" name="fname" id="fname" placeholder="Your Name">
-                    </div>
-                    <div class="col-6">
-                        <p>Email Address </p>
-                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    <div class="col-12">
+                        <p>First Name</p>
+                        <input type="text"  placeholder="Your Name" name="first_name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
+                        <input type="hidden" class="form-control bg-transparent" id="name" placeholder="First Name" name="user_id" value="{{ Auth::user()->id }}">
+                        @error('first_name')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
                     </div>
     
+                    <div class="col-12">
+                        <p>Last Name</p>
+                        <input type="text" placeholder="Last Name" name="last_name" value="{{ old('last_name')}}" class="@error('last_name') is-invalid @enderror">
+                        @error('last_name')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
+                    </div>
+                 
+                 
+    
+                </div>
+                <div class="row_book">
+                    <div class="col-12">
+                        <p>Email Address </p>
+                        <input type="email" placeholder="Email Address" id="email"  name="email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
+                        @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
+                    </div>
+                    <div class="col-12">
+                        <p>Phone Number </p>
+                        <input type="text" placeholder="Phone Number" name="phoneNumber" value="{{ old('phoneNumber')}}" class="@error('phoneNumber') is-invalid @enderror">
+                        @error('phoneNumber')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
+                    </div>
+                 
                 </div>
     
                 <div class="row_book">
     
-                    <div class="col-6">
+                    <div class="col-12">
                         <p>Select Date</p>
-                        <input type="date" name="date" id="date">
+                        <input type="text"  class="form-control bg-transparent datetimepicker-input" id="date_picker" placeholder="Date" data-target="#date3" data-toggle="datetimepicker" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror" />
+                        {{-- <input type="date"  id="date" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror"> --}}
+                        @error('res_date')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
                     </div>
-                    <div class="col-6">
-                        <p>Select Number</p>
-                        <select name="s-select">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                    <div class="col-12">
+                        <label for="services_id">Choose a Services:</label>
+
+                        <select name="services_id" id="services"  value="{{ old('services_id')}}" class="@error('services_id') is-invalid @enderror">
+                            @foreach ($services as $value)
+                                
+                            <option value="{{$value->id}}">{{$value->name}}  price : {{$value->price}} JD</option>
+                            @endforeach
                         </select>
+                        @error('services_id')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                       @enderror
                     </div>
+                
     
                 </div>
     
@@ -113,7 +150,7 @@
     
              <div class="col-12">
                     <p> Messages</p>
-                    <textarea name="Messages" id="Messages" cols="3" rows="10"></textarea>
+                    <textarea id="Messages" cols="3" rows="10" name="comment" value="{{ old('comment')}}"></textarea>
                 </div>
     
                 </div>
@@ -149,6 +186,92 @@
 
 </div>
 
+
+
+
+
+
+{{-- 
+
+<form action="{{route('user.book.create',$data->id)}}" method="POST">
+    @method('GET')
+    @csrf
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control bg-transparent" id="name" placeholder="First Name" name="first_name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
+                <input type="hidden" class="form-control bg-transparent" id="name" placeholder="First Name" name="user_id" value="{{ Auth::user()->id }}">
+                <label for="name">First Name</label>
+                @error('first_name')
+                <div class="alert alert-danger">{{ $message }}</div>
+               @enderror
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control bg-transparent" id="name" placeholder="Last Name" name="last_name" value="{{ old('last_name')}}" class="@error('last_name') is-invalid @enderror">
+                <label for="name">Last Name</label>
+                @error('last_name')
+                <div class="alert alert-danger">{{ $message }}</div>
+               @enderror
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control bg-transparent" id="name" placeholder="Phone Number" name="phoneNumber" value="{{ old('phoneNumber')}}" class="@error('phoneNumber') is-invalid @enderror">
+                <label for="name">Phone Number</label>
+                @error('phoneNumber')
+                <div class="alert alert-danger">{{ $message }}</div>
+               @enderror
+            </div>
+        </div>
+        @if($data->guest_number==1)
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="number" class="form-control bg-transparent" id="name" placeholder="Guest Number" min="1" value="1" name="guest_number">
+                <label for="name">Number of guest</label>
+            </div>
+        </div>
+        @endif
+        @if($data->guest_number!=1)
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="hidden" class="form-control bg-transparent" id="name"  min="1" value="{{$data->guest_number}}" name="guest_number" value="{{ old('guest_number')}}">
+            </div>
+        </div>
+        @endif
+
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email" name="email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
+                <label for="email">Your Email</label>
+                @error('email')
+                <div class="alert alert-danger">{{ $message }}</div>
+               @enderror
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating date" id="date3" data-target-input="nearest">
+                <input type="text"  class="form-control bg-transparent datetimepicker-input" id="date_picker" placeholder="Date" data-target="#date3" data-toggle="datetimepicker" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror" />
+                <label for="datetime">Date</label>
+                @error('res_date')
+                <div class="alert alert-danger">{{ $message }}</div>
+               @enderror
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px" name="comment" value="{{ old('comment')}}"></textarea>
+                <label for="message">Special Request</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+        </div>
+    </div>
+</form> --}}
+
 <!--  Book Now  -->
 
 
@@ -180,6 +303,26 @@
 
 
     <script src="../JS/scrollUp.js"> </script>
-    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script language="javascript">
+    // var today = new Date();
+    // var dd = String(today.getDate()).padStart(2, '0');
+    // var mm = String(today.getMonth() + 1).padStart(2, '0');
+    // var yyyy = today.getFullYear();
+
+    // today = yyyy + '-' + mm + '-' + dd;
+    // $( "#date_picker" ).attr({
+    //     changeYear: true,
+    //     minDate: today,
+    //     maxDate: '+28D',
+    // });
+    $( function() {
+    $( "#date_picker" ).datepicker({ minDate: 4, maxDate: "+1M" });
+  } );
+        
+    </script>
 </body>
 </html>

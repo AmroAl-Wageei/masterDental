@@ -3,8 +3,10 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\LogoutController;
+use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\User\BookController;
 use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\LoginUserController;
 use App\Http\Controllers\User\RegisterUserController;
@@ -74,13 +76,19 @@ Route::get('register', function () {
 
 // ADMIN
 
-
 Route::middleware(['auth', 'verified', 'admin'])->name('admin.')->prefix('admin')->group(function () {
 
-    Route::get('/', [HomeController::class, 'index'])->name('admin');    Route::resource('/users', UserController::class);
+    Route::get('/', [HomeController::class, 'index'])->name('admin'); Route::resource('/users', UserController::class);
     Route::resource('/admins', AdminController::class);
     Route::get('/logout', [LogoutController::class, 'destroy'])->name('logout');
     Route::resource('/services', ServicesController::class);
+    Route::resource('/reservation', ReservationController::class);
+    // Route::resource('/todo', [TodolistController::class]);
+
+//     Route::get('/to' , [TodolistController::class , 'index'])->name('index');
+//     Route::get('/to' , [TodolistController::class , 'index'])->name('index');
+// Route::post('/to' , [TodolistController::class , 'store'])->name('store');
+// Route::delete('/to{todolist:id}' , [TodolistController::class , 'destroy'])->name('destroy');
 
 });
 
@@ -108,5 +116,6 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::get('/login/destroy', [LoginUserController::class, 'destroy'])->name('login.destroy');
     Route::resource('/contact', ContactController::class);
     Route::resource('/trainee', TraineeController::class);
+    Route::resource('/booking', BookController::class);
 
 });

@@ -39,7 +39,7 @@
         <a href="{{ route('contact') }}">Contact Us</a>
         <a href="{{ route('profile') }}">Services</a>
         <a href="{{ route('artical') }}">Artical</a>
-        <a href="{{ route('book') }}">Book Now</a>
+        <a href="{{ route('user.booking.index') }}">Book Now</a>
         @if(Auth::user())
         <a href="{{route('user.login.destroy')}}"  id="navr">LOGOUT</a>
         <a href=""  id="navr">ACCOUNT</a>

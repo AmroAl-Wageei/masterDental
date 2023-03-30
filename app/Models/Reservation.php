@@ -12,11 +12,11 @@ class Reservation extends Model
     use SoftDeletes;
 
 
-    protected $fillable = ['first_name', 'last_name', 'user_id','phoneNumber','email','res_date','price','status','comment','service_id'];
+    protected $fillable = ['first_name', 'last_name', 'user_id','phoneNumber','email','res_date','price','status','comment','services_id'];
    
     public function service()
     {
-        return $this->belongsTo(Service::class);
+        return $this->belongsTo(Service::class,'services_id');
     }
     public function user()
     {

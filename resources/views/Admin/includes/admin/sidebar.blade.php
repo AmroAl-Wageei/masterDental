@@ -7,7 +7,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
       <li class="nav-item nav-profile">
-        <a href="#" class="nav-link">
+        <a href="{{route('admin.admin')}}" class="nav-link">
             <div class="nav-profile-image">
                 <?php $image = Auth()->user()->image ?>
                 <img src="{{URL::asset("storage/image/$image")}}" alt="profile">
@@ -36,17 +36,17 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+        <a class="nav-link" href="{{route('admin.reservation.index')}}" >
             <span class="menu-title"> Reservation </span>
-            <i class="menu-arrow"></i>
+            {{-- <i class="menu-arrow"></i> --}}
             <i class="mdi mdi-calendar-clock menu-icon"></i>
         </a>
-        <div class="collapse" id="ui-basic">
+        {{-- <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Reservation For Today</a></li>
             <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Reservation For This Month</a></li>
         </ul>
-    </div>
+    </div> --}}
 </li>
 <li class="nav-item">
     <a class="nav-link" href="{{route('admin.services.index')}}">

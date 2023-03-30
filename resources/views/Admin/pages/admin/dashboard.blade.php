@@ -352,15 +352,37 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 grid-margin stretch-card">
+    {{-- <div class="col-md-5 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
           <h4 class="card-title text-white">Todo</h4>
-          <div class="add-items d-flex">
-            <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?">
-            <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task" style=" background: linear-gradient(to right, #84d9d2, #07cdae);">Add</button>
-          </div>
-          <div class="list-wrapper">
+          <form class="list-wrapper" action="{{route('admin.store')}}" method="post" autocomplete="off">
+            @csrf
+
+            <div class="add-items d-flex">
+              <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?" name="content">
+              <button type="submit" class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task" style=" background: linear-gradient(to right, #84d9d2, #07cdae);">Add</button>
+            </div>
+          </form>
+            {{-- if tasks count  --}}
+
+            {{-- @if (($todolists))
+             <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                @foreach ($todolists as $todolist)
+                  <li >
+                    <form class="form-check" action="{{route('admin.destroy' , $todolist->id )}}" method="POST">
+                      <label class="form-check-label" >
+                        <input class="checkbox" type="checkbox"  style=" background: linear-gradient(to right, #84d9d2, #07cdae);"> {{$todolist->content}} </label>
+                      @csrf
+                      @method('delete')
+                      <button></button><i class="remove mdi mdi-close-circle-outline"></i>
+
+                    </form>
+                  </li>
+                  @endforeach
+             </ul>
+            @endif  --}}
+{{-- 
             <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
               <li >
                 <div class="form-check" >
@@ -404,8 +426,9 @@
                 </div>
                 <i class="remove mdi mdi-close-circle-outline"></i>
               </li>
-            </ul>
-          </div>
+            </ul> --}}
+
+
         </div>
       </div>
     </div>
