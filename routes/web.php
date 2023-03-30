@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\User\BookController;
 use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\LoginUserController;
+use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\User\RegisterUserController;
 use App\Http\Controllers\User\TraineeController;
 use Illuminate\Support\Facades\Route;
@@ -117,5 +118,9 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::resource('/contact', ContactController::class);
     Route::resource('/trainee', TraineeController::class);
     Route::resource('/booking', BookController::class);
+    Route::resource('/profile', ProfileController::class);
+
+
+    
 
 });

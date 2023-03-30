@@ -58,11 +58,11 @@
 
 
     <div class="box">
-        <img src="../images/header/Happy_Client/men1.png" alt="">
+        <img src="{{asset("storage/image/".auth()->user()->image)}}" alt="UserImage">
         <ul>
-            <li>Amro Salah</li>
-            <li>25 Years</li>
-            <li>Web Developer</li>
+            <li>{{auth()->user()->name}}</li>
+            <li>{{auth()->user()->phone}}</li>
+            <li>{{auth()->user()->email}}</li>
             <li> 
                 <i class="fa-brands fa-square-facebook"></i>
                 <i class="fa-brands fa-github"></i>
@@ -98,6 +98,43 @@
         </ul>
     </div>
 </div>
+
+
+{{-- Table Reservation --}}
+
+<div class="table">
+    <table>
+        <thead>
+          <tr>
+            <th>Services Name</th>
+            <th>Services Image</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Res Date</th>
+          </tr>
+        </thead>
+        <tbody>
+            @foreach ($reservations as $reservation)
+            <tr>
+                <th>{{$reservation->service->name}}</th>
+                <th>
+                    <?php $image =$reservation->service->image ?>
+                    <img src="{{URL::asset("storage/image/$image")}}" alt="image" />
+
+                </th>
+                <th>{{$reservation->service->price}}</th>
+                <th>{{$reservation->status}}</th>
+                <th>{{$reservation->res_date}}</th>
+            </tr>
+            @endforeach
+        </tbody>
+      </table>
+      
+</div>
+
+{{-- Table Reservation --}}
+
+
 
 
 

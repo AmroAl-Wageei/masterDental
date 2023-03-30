@@ -42,7 +42,7 @@
         <a href="{{ route('user.booking.index') }}">Book Now</a>
         @if(Auth::user())
         <a href="{{route('user.login.destroy')}}"  id="navr">LOGOUT</a>
-        <a href=""  id="navr">ACCOUNT</a>
+        <a href="{{route('user.profile.index')}}"  id="navr">ACCOUNT</a>
           @else 
           <a href="{{ route('register') }}" id="navr">Sgin Up </a>
           <a href="{{ route('login') }}" id="navr">Sgin In </a>
