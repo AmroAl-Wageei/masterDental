@@ -9,7 +9,7 @@
 
 
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-      <a class="navbar-brand brand-logo" href="../../index.html"><img src="{{'../../../../../Images/LOGOMAIN.png'}}" alt="LogoMain" style="height: 45px" width="100%"/></a>
+      <a class="navbar-brand brand-logo" href="{{route('admin.admin')}}"><img src="{{'../../../../../Images/LOGOMAIN.png'}}" alt="LogoMain" style="height: 45px" width="100%"/></a>
       {{-- <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
       <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a> --}}
     </div>
