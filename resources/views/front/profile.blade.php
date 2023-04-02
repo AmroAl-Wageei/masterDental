@@ -68,6 +68,8 @@
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </li>
+
+            <button type="submit">Edit Profile</button>
         </ul>
     </div>
 

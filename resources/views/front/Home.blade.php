@@ -26,6 +26,11 @@
      <!-- Swiper CSS -->
      <link rel="stylesheet" href="{{ asset('CSS/swiper-bundle.min.css')}}">
      <!-- Swiper CSS -->
+     
+     <!-- Before And After Smile - SASS -->
+     <link rel="stylesheet" href="{{ asset('CSS/smile.css')}}">
+     <!-- Before And After Smile - SASS -->
+     
 
      <!-- Font Awesome -->
      <script
@@ -563,7 +568,17 @@
 {{-- Review  --}}
 
 
-
+{{-- Smile --}}
+<div class="container">
+    <div id="comparison">
+      <figure>
+        <div id="handle"></div>
+        <div id="divisor"></div>
+      </figure>
+      <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+    </div>
+   </div>
+{{-- Smile --}}
 
 
 
@@ -619,10 +634,11 @@
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-31bee8e4-a299-4036-bbda-e1b2d0331bd3"></div>
     <!-- ICON WHATSAPP -->
-
+    
 
     {{-- JS External Link --}}
         <script src="{{asset('JS/review.js')}}"> </script>
+        <script src="{{asset('JS/smile.js')}}"> </script>
         <script src="{{asset('JS/slider.js')}}"> </script>
         <script src="{{asset('JS/scrollUp.js')}}"> </script>
     {{-- JS External Link --}}

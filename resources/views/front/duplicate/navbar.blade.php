@@ -29,6 +29,8 @@
         </div>
       </section>
       <!-- Head -->
+
+      {{-- test --}}
   
       <!--  Nav Bar  -->
   
@@ -42,7 +44,7 @@
         <a href="{{ route('user.booking.index') }}">Book Now</a>
         @if(Auth::user())
         <a href="{{route('user.login.destroy')}}"  id="navr">LOGOUT</a>
-        <a href="{{route('user.profile.index')}}"  id="navr">ACCOUNT</a>
+        <a href="{{route('user.profile.index')}}"  id="navr"><abbr title="User Profile"><i class="fa-solid fa-user"></i></abbr></a>
           @else 
           <a href="{{ route('register') }}" id="navr">Sgin Up </a>
           <a href="{{ route('login') }}" id="navr">Sgin In </a>
