@@ -5,7 +5,7 @@ const dataProduct = {
     datasets: [
         {
             label: "",
-            data: [10, 50, 30],
+            data: [10 , 40 ,20],
             backgroundColor: [
                 "rgba(255, 26, 104, 0.2)",
                 "rgba(54, 162, 235, 0.2)",
