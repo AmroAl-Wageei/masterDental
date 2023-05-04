@@ -375,172 +375,6 @@ nav img {
 
 /* ################################################################ */
 
-/* Our Vission and Mission  */
-
-.vission {
-    display: grid;
-    margin-bottom: 60px;
-}
-.vission_name {
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-}
-.vission_name h3::after {
-    content: "";
-    background: #74a7a1;
-    width: 200px;
-    height: 5px;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.vission_name h3 i {
-    font-size: 30px;
-    color: #74a7a1;
-}
-
-.vission_body {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    margin: 10% 0%;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.mission2 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-between;
-}
-
-.mission2 .img .one {
-    float: left;
-}
-.mission2 .img .two {
-    margin-left: 100%;
-}
-.mission2 .img img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #74a7a1;
-}
-.mission2 .img img:hover {
-    width: 170px;
-    height: 170px;
-    border: 3px solid #74a7a1;
-    transition: 0.5s;
-}
-.mission1 {
-    margin-top: 50px;
-}
-
-.mission1 .part1 {
-    margin-bottom: 100px;
-}
-.mission1 .part1 h2 {
-    margin-bottom: 15px;
-    color: #74a7a1;
-}
-.mission1 .part1,
-.part2 p {
-    color: #777777;
-}
-.mission1 .part2 h2 {
-    margin-bottom: 15px;
-    color: #74a7a1;
-}
-
-@media screen and (max-width: 980px) {
-    .vission_body {
-        display: grid;
-        grid-template-columns: 40% 40%;
-        margin: 10% 0%;
-        justify-content: center;
-        justify-content: space-evenly;
-    }
-
-    .mission1 .part1 {
-        margin-bottom: 100px;
-    }
-    .mission1 .part1 h2 {
-        margin-bottom: 15px;
-        color: #74a7a1;
-    }
-    .mission2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .mission2 .img .one {
-        float: right;
-    }
-    .mission2 .img .two {
-        float: right;
-    }
-    .mission2 .img img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-        border: 2px solid #74a7a1;
-    }
-    .mission2 .img img:hover {
-        width: 140px;
-        height: 140px;
-        border: 3px solid #74a7a1;
-        transition: 0.5s;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .vission_name {
-        margin: 0;
-    }
-    .vission_body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-    }
-    .mission2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .mission1 {
-        text-align: center;
-        margin: 0 15% 100px 15%;
-    }
-}
-@media screen and (max-width: 700px) {
-    .mission1 {
-        text-align: center;
-        margin: 0 15% 100px 15%;
-    }
-    .mission1 .part1,
-    .part2 p {
-        font-size: 14px;
-    }
-    .mission2 .img img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 2px solid #74a7a1;
-    }
-    .mission2 .img img:hover {
-        width: 120px;
-        height: 120px;
-        border: 3px solid #74a7a1;
-        transition: 0.5s;
-    }
-}
-/* End Our Vission and Mission  */
-
 /* ################################################################ */
 
 /*  Our Team  */
@@ -718,10 +552,11 @@ nav img {
 .sliderr {
     width: 50%;
     height: 50vh;
-    background: url("../images/header/About/AboutDr.jpg");
+    background: url("../images/Slide/Dr.7.jpeg");
     margin: 10% 0%;
-    animation: slide 10s infinite;
+    animation: slide 15s infinite;
     border-radius: 20px;
+    -webkit-animation: slide 15s infinite;
 }
 .sliderr1 {
     margin-left: 30px;
@@ -749,18 +584,20 @@ nav img {
 }
 
 @keyframes slide {
-    25% {
-        background: url("../images/header/About/AboutDr.jpg");
+    20% {
+        background: url("../images/Slide/Dr1.jpeg");
     }
-    50% {
-        background: url("../images/header/About/AboutDr.jpg");
+    40% {
+        background: url("../images/Slide/Dr2.jpeg");
     }
-
-    75% {
-        background: url("../images/header/About/vission1.png");
+    60% {
+        background: url("../images/Slide/Dr.7.jpeg");
+    }
+    80% {
+        background: url("../images/Slide/Dr5.jpeg");
     }
     100% {
-        background: url("../images/header/About/vission.jpg");
+        background: url("../images/Slide/Dr6.jpeg");
     }
 }
 

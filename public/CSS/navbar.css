@@ -26,9 +26,18 @@
     color: black;
 }
 
-.topnav a.active {
-    /* background-color: #206a5d; */
+/* .topnav a.active {
+    background-color: #206a5d;
     background-color: rgb(92, 133, 119);
+    color: white;
+} */
+.topnav > a:first-child {
+    background-color: rgb(92, 133, 119);
+    color: white;
+}
+.topnav a.active {
+    background-color: rgb(92, 133, 119);
+    /* background-color: rgb(92, 133, 119); */
     color: white;
 }
 

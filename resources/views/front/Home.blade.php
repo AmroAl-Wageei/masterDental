@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" This is website for dental clinic in aqaba country ">
+    <meta name="description" content="Looking for a trusted dental clinic in Aqaba? Visit Dr. Abdalmajed's clinic for top-quality dental services. Our experienced team uses the latest techniques to ensure your dental health. Book your appointment today.">
     <meta name="author" content=" Amro Salah Al - Wageei">
-    <meta name=" Keyword " content=" dentist , clinic , Aqaba , jordan , braces , dentist near me ">
-    <meta name="Copyright" content=" Orange Coding Academy . Designed by Amro Al - Wageei ">
-    <meta name="refresh" content=" 1 ">
-    <title> Home Page </title>
+    <meta name="keywords" content="dentist, clinic, Aqaba, Jordan, braces, dental care">    
+    <meta name="copyright" content="Orange Coding Academy. All rights reserved.">
+    <meta http-equiv="refresh" content="60">
+    {{-- <meta http-equiv="refresh" content="1;url=https://amroal-wageei.github.io/masterDental/"> --}}
+            <title> Home Page </title>
 
      <!-- Title Icon   -->
      <link rel="icon" href="images/aamro.png" type="image/icon type" />
@@ -24,11 +25,10 @@
     <!-- Boxicons CSS -->
 
      <!-- Swiper CSS -->
-     <link rel="stylesheet" href="{{ asset('CSS/swiper-bundle.min.css')}}">
-     <!-- Swiper CSS -->
+     {{-- <link rel="stylesheet" href="{{ asset('CSS/swiper-bundle.min.css')}}"> --}}
      
      <!-- Before And After Smile - SASS -->
-     <link rel="stylesheet" href="{{ asset('CSS/smile.css')}}">
+     {{-- <link rel="stylesheet" href="{{ asset('CSS/smile.css')}}"> --}}
      <!-- Before And After Smile - SASS -->
      
 
@@ -92,20 +92,22 @@
 
 <!--  Fixed  -->
 
-<div class="fixed_nav">
+<div class="fixed_nav" >
     <ul>
         <li><a href="{{route('book')}}">
+
+            <span> Book Now</span> <i class="fa-solid fa-book-medical"></i>
+
+                </a></li>
+        <li><a href="{{route('contact')}}">
+               <span> Call Now</span>  <i class="fa-solid fa-phone-volume" style="margin-right: 20px"></i>
+        </a></li>
+        {{-- <li><a href="{{route('book')}}">
                 <i class="fa-duotone fa-phone-volume"></i> <span> Book Now </span>
         </a></li>
         <li><a href="{{route('contact')}}">
                 <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
-        </a></li>
-        <li><a href="{{route('book')}}">
-                <i class="fa-duotone fa-phone-volume"></i> <span> Book Now </span>
-        </a></li>
-        <li><a href="{{route('contact')}}">
-                <i class="fa-duotone fa-phone-volume"></i> <span> Call Now </span>
-        </a></li>
+        </a></li> --}}
     </ul>
 </div>
 
@@ -204,6 +206,9 @@
 
 
 
+
+
+
 <!-- About Dr -->
 
 <section class="about_dr">
@@ -212,11 +217,11 @@
         <img src=" {{asset('images/header/About/AboutDr.jpg')}}" alt="">
         <div class="all-text">
             <h4> Dr . Abdalmajed Shandaq</h4>
-            <h1>A certified dental surgeon locally and internationally.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit quis consequuntur alias? Debitis tempore minima suscipit corrupti corporis, doloremque optio placeat nihil ab ad dolore deserunt voluptatem est soluta.</p>
+            <h2>Is a highly skilled and certified dental surgeon, both locally and internationally</h2>
+            <p> <strong>With nearly <span>25 years of experience</span> </strong>, including serving as the former director of Princess Haya Hospital and as a retired dean of the Jordanian Armed Forces, he brings a wealth of knowledge and expertise to his practice. Dr. Shandaq and his team use state-of-the-art technology and the latest techniques to ensure that patients receive the best possible treatment. Whether you're in need of a routine check-up or a more complex procedure, you can trust Dr. Shandaq and his team to provide you with the highest level of care.<strong> Contact us today to schedule your appointment and start your journey towards a healthier, happier smile.</strong> </p>
             <div class="btn_dr">
                 <a href=".{{route('about')}}"></a><button type="button"> Our Team </button>
-                <a href="{{route('book')}}"><button type="button" class="btn2"> Learn More </button></a>
+                <a href="{{route('book')}}"><button type="button" class="btn2"> Book Now </button></a>
             </div>
         </div>
     </div>
@@ -229,63 +234,8 @@
 
 <!--  Our Vission and Mission -->
 
-<div class="vission">
 
-
-    <div class="vission_name">
-        <h3> The <i>VISION</i>  and <i>MISSION</i>  </h3>
-    </div>
-
-
-    <div class="vission_body">
-
-
-        <div class="mission1">
-        
-            <div class="part1">
-                <h2> VISION </h2>
-                <p> best example of what is possible in dentistry.</p>
-            </div>
-    
-            <div class="part2">
-                <h2> MISSION </h2>
-                <p>We aim to deliver a patient-focused & quality dental services in a safe & friendly environment by ambitious staff, committed to continuously develop their skills, and to serve our community through educational programs in dentistry.
-
-                    <br> <br>
-
-                    The design of the clinic was well thought of, the colors, the glass surfaces and the lighting all designed with caution to guarantee an extra ordinary experience.
-
-                    <br> <br>
-
-                    We are committed to providing quality dental care to our patients with love. We provide comprehensive solutions for our patients’ oral health needs. Believing in the importance of listening, as we take the time to understand their objectives and provide solutions to transform their smile into something healthy, bright and beautiful.
-                </p>
-            </div>
-        
-        </div>
-    
-        <div class="mission2"> 
-    
-            <div class="img one"> 
-                <img src="{{asset('images/header/About/vission.jpg')}} " alt="VissionOne">
-            </div>
-            <div></div>
-    
-            <div></div>
-
-            <div class="img two">
-                <img src="{{asset('images/header/About/vission1.png')}}" alt="VissionTwo">
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-</div>
+@include('front.duplicate.vission')
 
 <!--  Our Vission and Mission -->
 
@@ -302,7 +252,7 @@
         <div class="service">
             <i class="fa-solid fa-tooth"></i>
             <h2>Outstanding treatment </h2>
-            <p> Lorem ipsum, dolor sit <br>amet consectetur adipisicing elit.</p>
+            <p> Experience exceptional medical care from Dr. Abd-Almajed Shandaq, with personalized treatment tailored to your unique needs.</p>
         </div>
 
         <div class="service">
@@ -310,19 +260,19 @@
             <!-- <i class="fa-solid fa-heart"></i> -->
             <i class="fa-solid fa-handshake-angle"></i>
             <h2> Work team </h2>
-            <p> Lorem ipsum, dolor sit <br>amet consectetur adipisicing elit.</p>
+            <p> Meet our experienced and compassionate team of medical professionals, committed to providing the best possible care for you.</p>
         </div>
 
         <div class="service">
             <i class="fa-regular fa-thumbs-up"></i>
             <h2>Guaranteed results </h2>
-            <p> Lorem ipsum, dolor sit <br>amet consectetur adipisicing elit.</p>
+            <p> We stand behind our treatments and guarantee results to ensure your complete satisfaction.</p>
         </div>
 
         <div class="service">
             <i class="fa-solid fa-toolbox"></i>
             <h2>Integrated medical equipment</h2>
-            <p> Lorem ipsum, dolor sit <br>amet consectetur adipisicing elit.</p>
+            <p> Our clinic features the latest in state-of-the-art medical equipment to support accurate diagnoses and effective treatments.</p>
         </div>
     </div>
 
@@ -340,30 +290,27 @@
     <h1> Our Work Is Heavily Shaped by Our Core Values </h1>
     <div class="value">
 
+
         <div class="product">
-                <div class="number"> 01 </div>
-                <h3> Compassion </h3>
-                <p>We aim at understanding and caring for patients and colleague’s needs and wants, by attentive listening and putting ourselves in people’s shoes.</p>
-            </div>
-
-            <div class="product">
-                <div class="number"> 02 </div>
-                <h3> Progression </h3>
-                <p>We aim at understanding and caring for patients and colleague’s needs and wants, by attentive listening and putting ourselves in people’s shoes.</p>
-            </div>
-
-            <div class="product">
-                <div class="number"> 03 </div>
-                <h3> Respect </h3>
-                <p>We aim at understanding and caring for patients and colleague’s needs and wants, by attentive listening and putting ourselves in people’s shoes.</p>
-            </div>
-
-            <div class="product">
-                <div class="number"> 01 </div>
-                <h3> Courage </h3>
-                <p>We aim at understanding and caring for patients and colleague’s needs and wants, by attentive listening and putting ourselves in people’s shoes.</p>
-            </div>
-    </div>
+            <div class="number"> 01 </div>
+            <h3> Compassion </h3>
+            <p>We believe in treating our patients with kindness and understanding, and we strive to provide a warm and welcoming environment for everyone who walks through our doors.</p>
+        </div>
+        <div class="product">
+            <div class="number"> 02 </div>
+            <h3> Progression </h3>
+            <p> We are committed to staying up-to-date with the latest advancements in dentistry, and we regularly attend continuing education courses and seminars to ensure that we are providing our patients with the best possible care.</p>
+        </div>
+        <div class="product">
+            <div class="number"> 03 </div>
+            <h3> Respect </h3>
+            <p>We treat every patient and colleague with the utmost respect and dignity, and we believe that everyone deserves to be heard and understood.</p>
+        </div>
+        <div class="product">
+            <div class="number"> 04 </div>
+            <h3> Courage </h3>
+            <p> We are dedicated to helping patients feel comfortable and safe during appointments, even in challenging cases. We find the best solution for each patient's unique needs.</p>
+        </div>
 
 </div>
 
@@ -375,8 +322,8 @@
 
 <section class="cta">
 
-    <h1> Be kind to your dentist. Because he has “fillings” too.<br> Be the reason someone <span> SMILES</span> today!
-    </h1>
+    <h2> Be kind to your dentist. Because he has “fillings” too.<br> Be the reason someone <span> SMILES</span> today!
+    </h2>
     <a href="{{route('book')}}" class="action_btn"> Book Now </a>
 </section>
 
@@ -392,7 +339,7 @@
 
     <div class="about_book">
         <div class="inner_about">
-            <h1> Trainee Form </h1>
+            <h2> Trainee Form </h2>
             <p class="text">Train with us under excellent hands and experiences.</p>
             <div class="form">
                 <form action="{{Route('user.trainee.store')}}" method="post">
@@ -434,11 +381,17 @@
 
 
 
+{{-- Happy Client Test --}}
+
+@include('front.duplicate.happyclient')
+
+{{-- Happy Client Test --}}
+
 
 
 <!-- HAPPY CLIENT -->
 
-<div class="happy_client">
+{{-- <div class="happy_client">
 
     <div class="main_client">
         <h2><span> Happy </span> Stories </h2>
@@ -499,113 +452,24 @@
         </div>
     </div>
 
-</div>
+</div> --}}
 
 <!-- HAPPY CLIENT -->
 
 
 
-{{-- Review  --}}
 
 
-{{-- <section class="review">
-    <div class="testimonial mySwiper">
-      <div class="testi-content swiper-wrapper">
-        <div class="slideReview swiper-slide">
-          <img src="{{asset('images/users/1.png')}}" alt="" class="image" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-            saepe provident dolorem a quaerat quo error facere nihil deleniti
-            eligendi ipsum adipisci, fugit, architecto amet asperiores
-            doloremque deserunt eum nemo.
-          </p>
 
-          <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-          <div class="details">
-            <span class="name">Marnie Lotter</span>
-            <span class="job">Web Developer</span>
-          </div>
-        </div>
-        <div class="slideReview swiper-slide">
-          <img src="{{asset('images/users/3.png')}}" alt="" class="image" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-            saepe provident dolorem a quaerat quo error facere nihil deleniti
-            eligendi ipsum adipisci, fugit, architecto amet asperiores
-            doloremque deserunt eum nemo.
-          </p>
-
-          <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-          <div class="details">
-            <span class="name">Marnie Lotter</span>
-            <span class="job">Web Developer</span>
-          </div>
-        </div>
-        <div class="slideReview swiper-slide">
-          <img src="{{asset('images/users/2.png')}}" alt="" class="image" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-            saepe provident dolorem a quaerat quo error facere nihil deleniti
-            eligendi ipsum adipisci, fugit, architecto amet asperiores
-            doloremque deserunt eum nemo.
-          </p>
-
-          <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-          <div class="details">
-            <span class="name">Marnie Lotter</span>
-            <span class="job">Web Developer</span>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next nav-btn"></div>
-      <div class="swiper-button-prev nav-btn"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section> --}}
-
-{{-- Review  --}}
-
-
-{{-- Smile --}}
-<div class="container">
-    <div id="comparison">
-      <figure>
-        <div id="handle"></div>
-        <div id="divisor"></div>
-      </figure>
-      <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-    </div>
-   </div>
-{{-- Smile --}}
 
 
 
 
     <!-- Slides Section -->
 
-    <div class="container_slide_about">
-        <div class="sliderr"></div>
-  
-        <div class="sliderr1">
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Quam, officiis.
-          </p>
-          <div class="dott">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-  
-      <!-- End Slides Section -->
+    @include('front.duplicate.galleryslider')
+
+    <!-- End Slides Section -->
 
 
 <!-- Google Map -->
@@ -627,6 +491,10 @@
 {{-- Footer --}}
 
 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!-- Scroll to top -->
         <span class="up"> <i class="fa-solid fa-arrow-up"></i></span>
     <!-- Scroll to top -->
@@ -638,10 +506,10 @@
     
 
     {{-- JS External Link --}}
-        <script src="{{asset('JS/review.js')}}"> </script>
         <script src="{{asset('JS/smile.js')}}"> </script>
         <script src="{{asset('JS/slider.js')}}"> </script>
         <script src="{{asset('JS/scrollUp.js')}}"> </script>
+        <script src="{{asset('JS/happyclient.js')}}"> </script>
     {{-- JS External Link --}}
 
 

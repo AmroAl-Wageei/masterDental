@@ -13,9 +13,8 @@
 
      <!-- Title Icon   -->
      <link rel="icon" href="images/aamro.png" type="image/icon type" />  
-       <!-- Link CSS -->
+    <!-- Link CSS -->
     <link rel="stylesheet" href="{{ asset('CSS/aboutus.css')}}">
-    <link rel="stylesheet" href="{{ asset('CSS/navbar.css')}}">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3692f58ddc.js" crossorigin="anonymous"></script>
     <!-- Google Font -->
@@ -87,67 +86,11 @@
 
 
 
-<!-- Our Vission -->
+<!--  Our Vission and Mission -->
 
-<div class="vission">
+@include('front.duplicate.vission')
 
-
-    <div class="vission_name">
-        <h3> The <i>VISION</i>  and <i>MISSION</i>  </h3>
-    </div>
-
-
-    <div class="vission_body">
-
-
-        <div class="mission1">
-        
-            <div class="part1">
-                <h2> VISION </h2>
-                <p> best example of what is possible in dentistry.</p>
-            </div>
-    
-            <div class="part2">
-                <h2>MISSION</h2>
-                <p>We aim to deliver a patient-focused & quality dental services in a safe & friendly environment by ambitious staff, committed to continuously develop their skills, and to serve our community through educational programs in dentistry.
-
-                    <br> <br>
-
-                    The design of the clinic was well thought of, the colors, the glass surfaces and the lighting all designed with caution to guarantee an extra ordinary experience.
-
-                    <br> <br>
-
-                    We are committed to providing quality dental care to our patients with love. We provide comprehensive solutions for our patients’ oral health needs. Believing in the importance of listening, as we take the time to understand their objectives and provide solutions to transform their smile into something healthy, bright and beautiful.
-                </p>
-            </div>
-        
-        </div>
-    
-        <div class="mission2"> 
-    
-            <div class="img one"> 
-                <img src="../images/header/About/vission.jpg" alt="">
-            </div>
-            <div></div>
-    
-            <div></div>
-
-            <div class="img two">
-                <img src="../images/header/About/vission1.png" alt="">
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-</div>
-
-<!-- End Our Vission -->
+<!--  Our Vission and Mission -->
 
 
 
@@ -185,7 +128,7 @@
 
 <!--  Our Team -->
 
-<div class="our_team" id="Team">
+{{-- <div class="our_team" id="Team">
     <h1 class="heading">
         <span>Meet Our</span> Team Behind
     </h1>
@@ -219,79 +162,20 @@
             <p>A motivated  developer pursuing a software development and QA testing career .</p>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!--  End Our Team -->
 
 
+{{-- Our Team --}}
 
+<div class="teams">
+    <div class="container">
 
-<!-- HAPPY CLIENT -->
-
-<div class="happy_client">
-
-    <div class="main_client">
-        <h2><span> Happy </span> Stories </h2>
-        <h4> Creating Vibrant Smiles for Healthy <br>Lifestyles! </h4>
-        
-        <div class="item">
-            <i class="fa-solid fa-square"></i>
-            <i class="fa-solid fa-square" id="item_color"></i>
-            <i class="fa-solid fa-square"></i>
-            <i class="fa-solid fa-square"id="item_color"></i>
-            <i class="fa-solid fa-square"></i>
-            <i class="fa-solid fa-square"id="item_color"></i>
-        </div>
     </div>
-
-    <div class="card">
-        <div class="card_img">
-        <img src="../images/about/Amro.png" alt="">
-        </div>
-        <div class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card_img">
-        <img src="../images/about/Amro.png" alt="">
-        </div>
-        <div class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card_img">
-        <img src="../images/about/Amro.png" alt="">
-        </div>
-        <div class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card_img">
-        <img src="../images/about/Amro.png" alt="">
-        </div>
-        <div class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card_img">
-        <img src="../images/about/Amro.png" alt="">
-        </div>
-        <div class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae soluta rem officia ipsam, illo distinctio debitis c
-        </div>
-    </div>
-
 </div>
+{{-- Our Team --}}
 
-<!-- HAPPY CLIENT -->
 
 
 
@@ -304,8 +188,10 @@
 
     <div class="sliderr1">
         <h2> Gallery </h2>
-        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quam, officiis.</p>
-        <div class="dott">
+        <p>
+            Discover a New Level of Dental Care with Dr. Abdalmajed <br> Affordable and Effective Solutions for All Your Dental Needs.
+        </p>
+                <div class="dott">
             <span></span>
             <span></span>
             <span></span>
@@ -335,8 +221,9 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-31bee8e4-a299-4036-bbda-e1b2d0331bd3"></div>
 
-
-    <script src="../JS/scrollUp.js"> </script>
-    
+    {{-- Link JS --}}
+    <script src="{{asset('JS/scrollUp.js')}}"> </script>
+    <script src="{{asset('JS/happyclient.js')}}"> </script>
+    {{-- Link JS --}}
 </body>
 </html>

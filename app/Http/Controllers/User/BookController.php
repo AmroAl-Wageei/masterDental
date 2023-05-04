@@ -22,6 +22,7 @@ class BookController extends Controller
         $services = Service::all();
 
         return view('front.book',['services'=>$services]);
+        // return view('front.book',['services'=>$services]);
     }
 
     /**

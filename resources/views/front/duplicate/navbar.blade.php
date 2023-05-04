@@ -35,24 +35,25 @@
       <!--  Nav Bar  -->
   
       <div class="topnav" id="myTopnav">
-        <a href="{{ route('home') }}" class="active">Home</a>
-        <a href="{{ route('soon') }}">Coming Soon</a>
-        <a href="{{ route('about') }}">About Us</a>
-        <a href="{{ route('contact') }}">Contact Us</a>
-        <a href="{{ route('profile') }}">Services</a>
-        <a href="{{ route('artical') }}">Artical</a>
-        <a href="{{ route('user.booking.index') }}">Book Now</a>
+        <a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
+        <a href="{{ route('soon') }}" class="{{ request()->is('soon') ? 'active' : '' }}">Coming Soon</a>
+        <a href="{{ route('about') }}" class="{{ request()->is('about') ? 'active' : '' }}">About Us</a>
+        <a href="{{ route('contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+        {{-- <a href="{{ route('profile') }}" class="{{ request()->is('profile') ? 'active' : '' }}">Services</a> --}}
+        <a href="{{ route('artical') }}" class="{{ request()->is('artical') ? 'active' : '' }}">Article</a>
+        <a href="{{ route('user.booking.index') }}" class="{{ request()->is('user/booking') ? 'active' : '' }}">Book Now</a>
         @if(Auth::user())
-        <a href="{{route('user.login.destroy')}}"  id="navr">LOGOUT</a>
-        <a href="{{route('user.profile.index')}}"  id="navr"><abbr title="User Profile"><i class="fa-solid fa-user"></i></abbr></a>
-          @else 
-          <a href="{{ route('register') }}" id="navr">Sgin Up </a>
-          <a href="{{ route('login') }}" id="navr">Sgin In </a>
-            @endif
+          <a href="{{ route('user.login.destroy') }}" id="navr">LOGOUT</a>
+          <a href="{{ route('user.profile.index') }}" id="navr"><abbr title="User Profile"><i class="fa-solid fa-user"></i></abbr></a>
+        @else 
+          <a href="{{ route('register') }}" id="navr">Sign Up</a>
+          <a href="{{ route('login') }}" id="navr">Sign In</a>
+        @endif
         <a href="#" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
+      
   
   
   
