@@ -60,7 +60,7 @@
                                 @if ($value->status=="Pending")
                                     
 
-                                <td><label class="badge badge-warning">Pending</label></td>
+                                <td ><label class="badge badge-warning">Pending</label></td>
                                 
                                 
                                 @elseif($value->status=="Accepted")
@@ -71,7 +71,7 @@
                                 <td><label class="badge badge-danger">Rejected</label></td>
                                 @endif
                                 <td>
-                                  <a href="{{Route('admin.reservation.edit',$value->id)}}">edit</a>
+                                  <a href="{{Route('admin.reservation.edit',$value->id)}}"><label class="badge badge-primary" style="cursor: pointer">Edit</label></a>
                                 </td>
                               </tr>
                               {{-- warning , info , success --}}

@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.Home');
 });
 
 Route::get('footer', function () {

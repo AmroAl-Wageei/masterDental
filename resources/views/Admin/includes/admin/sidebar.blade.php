@@ -66,7 +66,7 @@
         <i class="mdi mdi-format-list-bulleted-type menu-icon"></i>
     </a>
 </li>
-<li class="nav-item">
+{{-- <li class="nav-item">
     <a class="nav-link" href="../../pages/tables/basic-table.html">
         <span class="menu-title">Review</span>
         <i class="mdi mdi-chart-bar menu-icon"></i>
@@ -122,7 +122,7 @@
                 </ul>
             </div>
         </span>
-    </li>
+    </li> --}}
 </ul>
 </nav>
 

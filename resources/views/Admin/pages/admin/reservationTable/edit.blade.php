@@ -29,7 +29,7 @@
             <option value="Rejected">Rejected</option>
         </select>
 
-        <button type="submit">edit</button>
+        <a href="{{Route('admin.reservation.index')}}"><label class="badge badge-primary" style="cursor: pointer">Edit</label></a>
       </form>
 
 
