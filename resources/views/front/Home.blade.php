@@ -120,14 +120,14 @@
     <div class="slide-content">
     <h1>Welcome To <span> Dr. Abdalmajed's </span>  <br>Dental Clinic</h1>
     <p>We are committed to providing you with the best dental care possible. Our team of experienced professionals use the latest technology and techniques to ensure that you have a healthy, beautiful smile.</p>
-    <button>Book An Appointment</button>
+   <a href="{{route('book')}}"> <button> Book An Appointment </button></a>
     </div>
     </div>
     <div class="slidee slide-2">
     <div class="slide-content">
     <h1>Transform Your  <span>Smile</span> Today</h1>
     <p>Are you unhappy with your smile? Our clinic offers a range of cosmetic dentistry services, including teeth whitening, veneers, and more. Schedule a consultation today to learn how we can help you achieve the smile of your dreams.</p>
-    <button>Explore Our Services</button>
+    <a href="{{route('book')}}"><button>Explore Our Services</button></a>
     </div>
     </div>
     <div class="slidee slide-3">
@@ -135,7 +135,7 @@
     <h1>Emergency Dental<span>Care</span>  <br>When You Need It</h1>
     <p>Dental emergencies can happen at any time. Our clinic offers same-day emergency appointments to ensure that you receive the care you need as soon as possible. Contact us now to schedule an emergency appointment.</p>
 
-    <button>Request Emergency Care</button>
+    <a href="{{route('book')}}"><button>Request Emergency Care</button></a>
     </div>
     </div>
     </div>
@@ -283,6 +283,45 @@
 <!-- Our Value -->
 
 
+{{-- Services  --}}
+<div class="services">
+    <h2>Our Services</h2>
+
+    <div class="cen"></div>
+
+    <div class="servicee">
+        <i class="fa-solid fa-route"></i>        <h3>Teeth Cleaning:</h3>
+        <p>Removes plaque and tartar buildup to keep teeth and gums healthy.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Fillings</h3>
+        <p>Repairs decayed or damaged teeth with a tooth-colored composite material.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Extractions</h3>
+        <p>Removes severely damaged or painful teeth that cannot be saved.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Root Canals</h3>
+        <p>Treats infected or inflamed tooth pulp to save a damaged tooth.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Dental Implants</h3>
+        <p>Replaces missing teeth with a permanent, natural-looking tooth replacement.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Teeth Whitening</h3>
+        <p>Brightens teeth and removes stains for a whiter, brighter smile.</p>
+    </div>
+
+</div>
+
+{{-- Services  --}}
 
 <!-- Call to action book  -->
 
@@ -375,7 +414,7 @@
 <br>
 <br>
 <br>
-@include('front.duplicate.footer')
+{{-- @include('front.duplicate.footer') --}}
 
 {{-- Footer --}}
 
