@@ -60,3 +60,4 @@ function slidefun(n) {
     dot[counter - 1].classList.add('active');
 
 }
+
