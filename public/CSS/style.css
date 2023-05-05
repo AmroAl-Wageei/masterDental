@@ -1599,9 +1599,12 @@ h3 {
 }
 .servicee {
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     width: calc(100% / 3 - 50px);
-    margin: 0 -2px;
-    padding: 20px;
+    height: 200px;
+    margin: 0 10px;
+    padding: 50px;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.4s;
@@ -1609,6 +1612,11 @@ h3 {
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .servicee:hover {
     background: #cac8c8;

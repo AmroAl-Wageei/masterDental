@@ -294,28 +294,25 @@
         <p>Removes plaque and tartar buildup to keep teeth and gums healthy.</p>
     </div>
     <div class="servicee">
-        <i class="fa-solid fa-phone-volume"></i>
-        <h3>Fillings</h3>
+        <i class="fa-solid fa-teeth-open"></i>        <h3>Fillings</h3>
         <p>Repairs decayed or damaged teeth with a tooth-colored composite material.</p>
     </div>
     <div class="servicee">
-        <i class="fa-solid fa-phone-volume"></i>
-        <h3>Extractions</h3>
+        <i class="fa-solid fa-recycle"></i>        <h3>Extractions</h3>
         <p>Removes severely damaged or painful teeth that cannot be saved.</p>
     </div>
     <div class="servicee">
-        <i class="fa-solid fa-phone-volume"></i>
-        <h3>Root Canals</h3>
+        <i class="fa-solid fa-tooth"></i>        <h3>Root Canals</h3>
         <p>Treats infected or inflamed tooth pulp to save a damaged tooth.</p>
     </div>
     <div class="servicee">
-        <i class="fa-solid fa-phone-volume"></i>
-        <h3>Dental Implants</h3>
+        <i class="fa-solid fa-house-chimney-medical"></i>
+            <h3>Dental Implants</h3>
         <p>Replaces missing teeth with a permanent, natural-looking tooth replacement.</p>
     </div>
     <div class="servicee">
-        <i class="fa-solid fa-phone-volume"></i>
-        <h3>Teeth Whitening</h3>
+        <i class="fa-solid fa-teeth"></i>      
+          <h3>Teeth Whitening</h3>
         <p>Brightens teeth and removes stains for a whiter, brighter smile.</p>
     </div>
 
