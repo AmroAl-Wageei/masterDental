@@ -283,8 +283,9 @@
 <!-- Our Value -->
 
 
-{{-- Services  --}}
-<div class="services">
+<!-- Services  -->
+
+<div class="services show">
     <h2>Our Services</h2>
 
     <div class="cen"></div>
@@ -318,7 +319,9 @@
 
 </div>
 
-{{-- Services  --}}
+<!-- Services  -->
+
+
 
 <!-- Call to action book  -->
 
@@ -435,6 +438,7 @@
 <script src="{{asset('JS/slider.js')}}"> </script>
 <script src="{{asset('JS/scrollUp.js')}}"> </script>
 <script src="{{asset('JS/happyclient.js')}}"> </script>
+<script src="{{asset('JS/animation.js')}}"> </script>
 {{-- JS External Link --}}
 
 {{-- CDN Slider --}}

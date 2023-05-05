@@ -959,7 +959,7 @@ h3 {
 .value {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
+    margin-left: 40px;
 }
 
 .product {
@@ -1031,7 +1031,7 @@ h3 {
 @media screen and (max-width: 560px) {
     .product {
         width: 370px;
-        height: 250px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 380px) {
@@ -1583,26 +1583,31 @@ h3 {
 
 .services {
     text-align: center;
+    opacity: 0;
+}
+.show {
+    opacity: 1;
 }
 .services h2 {
     display: inline-block;
     text-transform: uppercase;
-    border-bottom: 3px solid #348677;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 100px;
+    color: #348677;
 }
 .cen {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 200px;
+    margin: 0 auto 50px auto;
     overflow: hidden;
     padding: 20px;
+    border-bottom: 3px solid #348677;
 }
 .servicee {
     display: inline-block;
     align-items: center;
     justify-content: center;
     width: calc(100% / 3 - 50px);
-    height: 200px;
+    height: 240px;
     margin: 0 10px;
     padding: 50px;
     box-sizing: border-box;
@@ -1623,13 +1628,13 @@ h3 {
 }
 .servicee i {
     font-size: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #74a7a1;
 }
 .servicee h3 {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     color: #000;
 }
 .servicee p {

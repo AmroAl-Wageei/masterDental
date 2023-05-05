@@ -31,6 +31,15 @@
         justify-content         : center;
         align-items             : center;
         color                   : aliceblue;
+        height: 100vh;
+    }
+
+    @media (max-width :767px) {
+        body {
+        background-image : url('../images/header/Soon/Soonn.png');
+        max-width: 100%;
+        height: 100vh;
+        }
     }
 /* 
     body::after {
