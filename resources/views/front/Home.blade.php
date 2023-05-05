@@ -291,7 +291,7 @@
     <div class="cen"></div>
 
     <div class="servicee">
-        <i class="fa-solid fa-route"></i>        <h3>Teeth Cleaning:</h3>
+        <i class="fa-solid fa-route"></i>        <h3>Teeth Cleaning</h3>
         <p>Removes plaque and tartar buildup to keep teeth and gums healthy.</p>
     </div>
     <div class="servicee">
@@ -414,7 +414,7 @@
 <br>
 <br>
 <br>
-{{-- @include('front.duplicate.footer') --}}
+@include('front.duplicate.footer')
 
 {{-- Footer --}}
 

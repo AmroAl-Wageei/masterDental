@@ -5,14 +5,15 @@
 }
 
 html {
-    scroll-behavior:smooth;
-} 
+    scroll-behavior: smooth;
+}
 /* ################################################################ */
 
 .header {
     min-height: 70vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/header/Book/book.png');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url("../images/header/Book/book.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -46,7 +47,7 @@ nav img {
 }
 
 .nav_livk ul li::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background: #00999c;
@@ -64,17 +65,17 @@ nav img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 .text_header_artical h1 {
     font-size: 62px;
 }
 .text_header_artical h1 span {
-    color:#74a7a1;
+    color: #74a7a1;
 }
 .text_header_artical p span {
-    color:#74a7a1;
+    color: #74a7a1;
     font-weight: 600;
 }
 .text_header_artical p {
@@ -101,11 +102,14 @@ nav img {
     transition: 1s;
 }
 
-.main_book {
-    display: flex;
-    flex-direction: row;
-}
+/* .main_book {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    align-items: center;
+} */
 
+@media (max-width: 1200px) {
+}
 .head_book h1 {
     font-size: 40px;
     color: #fff;
@@ -120,23 +124,45 @@ nav img {
     margin-top: 100px;
 }
 
-
 .container_book {
-
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     min-height: 100vh;
-    padding: 20px 16px;
+    margin-top: 50px;
     /* background-color: #9a4e4e; */
 }
 
 .body_book {
-    width: 500px;
-    background-color:#1d2228;
+    width: 700px;
+    background-color: #1d2228;
     opacity: 0.7;
+}
 
+@media (max-width: 767px) {
+    .container_book {
+        max-width: 100%;
+    }
+    .body_book {
+        width: 300px;
+    }
+    .head_book {
+        padding: 0px;
+    }
+
+    .row_book {
+        padding: 2px 0px;
+    }
+    .body_box {
+        padding: 2px;
+    }
+
+    .thx {
+        font-size: 15px;
+        padding: 30px;
+        margin-top: 50px;
+    }
 }
 
 .head_book {
@@ -152,7 +178,7 @@ nav img {
     width: 100%;
 }
 .col-6 {
-    width: 48%;
+    width: 46%;
 }
 .col-3 {
     width: 30%;
@@ -171,13 +197,15 @@ a {
     text-decoration: none;
     color: #74a7a1;
 }
-input,textarea,select {
+input,
+textarea,
+select {
     width: 100%;
     background-color: #141824;
     border: none;
     outline: none;
     padding: 10px;
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     margin-top: 5px;
     resize: none;
     color: #fff;
@@ -199,13 +227,12 @@ button {
 button:hover {
     background-color: #74a7a1;
     color: white;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-
 .all-text h4 {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-size: 18px;
     color: #777777;
     letter-spacing: 1px;
@@ -219,74 +246,148 @@ button:hover {
     margin-bottom: 70px;
 }
 .all-text p {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-size: 16px;
     color: #777777;
     line-height: 30px;
     margin-bottom: 70px;
 }
 
-
-
 /* ################################################################ */
 
+.boook-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 50px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px 150px;
+}
+.left h1 {
+    font-size: 40px;
+    color: #74a7a1;
+    margin-bottom: 25px;
+}
 
+h3 {
+    color: #1f4068;
+}
 
+.left img {
+    margin-bottom: 25px;
+}
+.left img,
+.right img {
+    width: 300px;
+}
+/* .right img {
+    margin: 10px 0;
+} */
+.left p,
+.right p {
+    line-height: 1.9;
+}
 
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 130px;
+}
+
+@media (min-width: 787px) and (max-width: 1170px) {
+    .boook-content {
+        flex-direction: column;
+        justify-content: left;
+        max-width: 100%;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 20px 120px;
+    }
+}
+@media (max-width: 767px) {
+    .boook-content > div {
+        width: 300px;
+        max-width: fit-content;
+    }
+    .left h1 {
+        font-size: 30px;
+    }
+    .left {
+        padding: 10px;
+    }
+    .left p {
+        padding: 0 10px 0 0;
+    }
+    .right {
+        padding: 10px;
+    }
+    .right p {
+        padding: 0 10px 0 0;
+    }
+}
 /* ################################################################ */
 
- /* Scroll UP */
+/* Scroll UP */
 
- .up {
+.up {
     position: fixed;
     bottom: 100px;
     right: -70px;
     /* background-color: #206A5D; */
     background-color: #74a7a1;
-    color: #DDD;
+    color: #ddd;
     font-weight: bold;
     font-size: 20px;
     /* padding: 10px;
     border-radius: 50%; */
-    font-family: Arial,Tahoma;
+    font-family: Arial, Tahoma;
     cursor: pointer;
     border-radius: 50%;
+}
 
- }
-
- .up i{
+.up i {
     width: 45px;
     height: 45px;
     text-align: center;
     padding: 25% 0 0 0;
- }
+}
 
- .up.show {
+.up.show {
     right: 32px;
- }
-  /* End Scroll UP */
+}
+/* End Scroll UP */
 
+/* Scroll bar */
 
-  
-
-   /* Scroll bar */
-
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 7px;
- }
- ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background-color: #f6f6f6;
-    box-shadow: 0,0,10px,#DDD inset;
- }
- ::-webkit-scrollbar-thumb {
-    background-color: #206A5D;
+    box-shadow: 0, 0, 10px, #ddd inset;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #206a5d;
     border-radius: 0px;
- }
- ::-webkit-scrollbar-thumb:hover {
-    background-color: #1F4068;
- }
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1f4068;
+}
 
-  /* End Scroll bar */
+/* End Scroll bar */
 
 /* ################################################################ */
-
+.thx {
+    max-width: fit-content;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

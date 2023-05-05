@@ -14,7 +14,7 @@
     <section class="head">
         <div class="containerrrr flexSB">
           <div class="logo">
-            <a href="{{ route('home') }}"><img src="./images/LOGOMAIN.png" alt="LOGO" /></a>
+            <a href="{{ route('home') }}"><img src="../images/LOGOMAIN.png" alt="LOGO" /></a>
           </div>
   
           <div class="social">

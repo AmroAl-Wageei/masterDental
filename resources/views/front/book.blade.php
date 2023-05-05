@@ -13,8 +13,8 @@
 
     
      <!-- Title Icon   -->
-     <link rel="icon" href="images/aamro.png" type="image/icon type" />  
-    <!-- Link CSS -->
+     <link rel="icon" href="../images/aamro.png" type="image/icon type" />
+     <!-- Title Icon   -->
     <link rel="stylesheet" href="{{ asset('CSS/book.css')}}">
     <link rel="stylesheet" href="{{ asset('CSS/navbar.css')}}">
     <link rel="stylesheet" href="{{ asset('CSS/footer.css')}}">
@@ -61,10 +61,31 @@
 
 
 
+<!-- Section One -->
+<div class="boook-content">
+    <div class="left">
+        <h1>Book an Appointment</h1>
+        <img src="../images/book/book2.jpg" alt="book-content">
+
+        <h3>Why Book with Us?</h3>
+        <p>At our dental clinic, we provide top-quality dental care in a comfortable and welcoming environment. Our team of experienced and friendly dental professionals are committed to helping you achieve and maintain optimal oral health.</p>
+    </div>
+    <div class="right">
+        <h3>How to Book</h3>
+        <p>Booking an appointment with us is easy! You can call us at [phone number] or use our online booking system to schedule your appointment at your convenience.</p>
+
+        <img src="../images/book/book5.jpg" alt="book-content">
+        <h3>What to Expect</h3>
+        <p>During your appointment, our team will conduct a thorough examination of your teeth and gums, and provide any necessary treatments or recommendations for your oral health. We strive to make your experience as comfortable and stress-free as possible.</p>
+    </div>
+
+</div>
+<!-- Section One -->
+
 
 <!--  Book Now  -->
 
-<div class="main_book">
+ <div class="main_book">
 
     <div class="container_book">
 
@@ -72,8 +93,8 @@
     
     
             <div class="head_book" id="BookNow">
-                <h1>Booking Form</h1>
-                <p> Let's start to booking now!</p>
+                <h1>Dr. Abdalmajed Dental Clinic</h1>
+                <p>Book your appointment today and get ready to show off your healthy smile!</p>
             </div>
     
     {{-- {{dd($services)}} --}}
@@ -81,7 +102,7 @@
                 @csrf
                 <div class="row_book">
     
-                    <div class="col-12">
+                    <div class="col-6">
                         <p>First Name</p>
                         <input type="text"  placeholder="Your Name" name="first_name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
                         <input type="hidden" class="form-control bg-transparent" id="name" placeholder="First Name" name="user_id" value="{{ Auth::user()->id }}">
@@ -90,7 +111,7 @@
                        @enderror
                     </div>
     
-                    <div class="col-12">
+                    <div class="col-6">
                         <p>Last Name</p>
                         <input type="text" placeholder="Last Name" name="last_name" value="{{ old('last_name')}}" class="@error('last_name') is-invalid @enderror">
                         @error('last_name')
@@ -102,14 +123,14 @@
     
                 </div>
                 <div class="row_book">
-                    <div class="col-12">
+                    <div class="col-6">
                         <p>Email Address </p>
                         <input type="email" placeholder="Email Address" id="email"  name="email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
                         @error('email')
                         <div class="alert alert-danger">{{ $message }}</div>
                        @enderror
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
                         <p>Phone Number </p>
                         <input type="text" placeholder="Phone Number" name="phoneNumber" value="{{ old('phoneNumber')}}" class="@error('phoneNumber') is-invalid @enderror">
                         @error('phoneNumber')
@@ -121,7 +142,7 @@
     
                 <div class="row_book">
     
-                    <div class="col-12">
+                    <div class="col-6">
                         <p>Select Date</p>
                         <input type="text"  class="form-control bg-transparent datetimepicker-input" id="date_picker" placeholder="Date" data-target="#date3" data-toggle="datetimepicker" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror" />
                         {{-- <input type="date"  id="date" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror"> --}}
@@ -129,7 +150,7 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                        @enderror
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
                         <label for="services_id">Choose a Services:</label>
 
                         <select name="services_id" id="services"  value="{{ old('services_id')}}" class="@error('services_id') is-invalid @enderror">
@@ -163,120 +184,24 @@
                 </div>
     
             </form>
-    
-    
-    
-    
         </div>
         
     </div>
 
 
 
-    <div class="title_book">
-        <div class="all-text">
-            <h4> We make smile a healthier,brighter and more beautiful smile . </h4>
-            <h1> you deserve the best </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit quis consequuntur alias? <br> Debitis tempore minima suscipit corrupti corporis, doloremque optio placeat nihil ab ad dolore d<br>eserunt voluptatem est soluta.</p>
-            <div class="btn_dr">
-                <button type="button" class="btn2"> Learn More </button>
-            </div>
-        </div>
-    </div>
-
-</div>
 
 
-
-
-
-
-{{-- 
-
-<form action="{{route('user.book.create',$data->id)}}" method="POST">
-    @method('GET')
-    @csrf
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="text" class="form-control bg-transparent" id="name" placeholder="First Name" name="first_name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
-                <input type="hidden" class="form-control bg-transparent" id="name" placeholder="First Name" name="user_id" value="{{ Auth::user()->id }}">
-                <label for="name">First Name</label>
-                @error('first_name')
-                <div class="alert alert-danger">{{ $message }}</div>
-               @enderror
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="text" class="form-control bg-transparent" id="name" placeholder="Last Name" name="last_name" value="{{ old('last_name')}}" class="@error('last_name') is-invalid @enderror">
-                <label for="name">Last Name</label>
-                @error('last_name')
-                <div class="alert alert-danger">{{ $message }}</div>
-               @enderror
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="text" class="form-control bg-transparent" id="name" placeholder="Phone Number" name="phoneNumber" value="{{ old('phoneNumber')}}" class="@error('phoneNumber') is-invalid @enderror">
-                <label for="name">Phone Number</label>
-                @error('phoneNumber')
-                <div class="alert alert-danger">{{ $message }}</div>
-               @enderror
-            </div>
-        </div>
-        @if($data->guest_number==1)
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="number" class="form-control bg-transparent" id="name" placeholder="Guest Number" min="1" value="1" name="guest_number">
-                <label for="name">Number of guest</label>
-            </div>
-        </div>
-        @endif
-        @if($data->guest_number!=1)
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="hidden" class="form-control bg-transparent" id="name"  min="1" value="{{$data->guest_number}}" name="guest_number" value="{{ old('guest_number')}}">
-            </div>
-        </div>
-        @endif
-
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email" name="email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
-                <label for="email">Your Email</label>
-                @error('email')
-                <div class="alert alert-danger">{{ $message }}</div>
-               @enderror
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating date" id="date3" data-target-input="nearest">
-                <input type="text"  class="form-control bg-transparent datetimepicker-input" id="date_picker" placeholder="Date" data-target="#date3" data-toggle="datetimepicker" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror" />
-                <label for="datetime">Date</label>
-                @error('res_date')
-                <div class="alert alert-danger">{{ $message }}</div>
-               @enderror
-            </div>
-        </div>
-
-        <div class="col-12">
-            <div class="form-floating">
-                <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px" name="comment" value="{{ old('comment')}}"></textarea>
-                <label for="message">Special Request</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
-        </div>
-    </div>
-</form> --}}
+</div> 
 
 <!--  Book Now  -->
 
 
 
-
+<!-- Thanks -->
+<h2 class="thx" >Thank you for choosing our dental clinic. We appreciate your trust and look forward to seeing you at your appointment!</h2>
+<!-- Thanks -->
+ 
 
 
 
