@@ -26,7 +26,7 @@
                     <li><a href="{{route('home')}}"> FAQ </a></li>
                     <li><a href="{{route('home')}}"> New Trainee </a></li>
                     <li><a href="{{route('home')}}"> Returns </a></li>
-                    <li><a href="{{route('book')}}"> Book Now </a></li>
+                    <li><a href="{{ route('user.booking.index') }}"> Book Now </a></li>
                     <li><a href="{{route('home')}}"> Payment </a></li>
                     <li><a href="{{route('login')}}"> Login </a></li>
                     <li><a href="{{route('register')}}"> Register </a></li>
@@ -38,13 +38,13 @@
                 <h4> Work Hours </h4>
                     <div class="time_footer">
                         <ul>
-                            <li><a href="{{route('book')}}"> Saturday <span> 9 AM to 3:00 PM</span> </a></li>
-                            <li><a href="{{route('book')}}"> Sunday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="{{route('book')}}"> Monday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="{{route('book')}}"> Tuesday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="{{route('book')}}"> Wednesday  <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="{{route('book')}}"> Thursday <span> 9 AM to 3:00 PM</span></a></li>
-                            <li><a href="{{route('book')}}"> Friday  <span> OFF </span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Saturday <span> 9 AM to 3:00 PM</span> </a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Sunday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Monday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Tuesday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Wednesday  <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Thursday <span> 9 AM to 3:00 PM</span></a></li>
+                            <li><a href="{{ route('user.booking.index') }}"> Friday  <span> OFF </span></a></li>
                         </ul>
                     </div>
             </div>

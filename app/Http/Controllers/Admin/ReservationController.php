@@ -66,6 +66,7 @@ class ReservationController extends Controller
     {
         $data = Reservation::findOrfail($id);
         return view('Admin.pages.admin.reservationTable.edit', ['data' => $data]);
+        
     }
 
     /**

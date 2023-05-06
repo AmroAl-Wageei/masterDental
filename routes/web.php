@@ -54,9 +54,7 @@ Route::get('artical', function () {
     return view('front.artical');
 })->name('artical');
 
-Route::get('book', function () {
-    return view('front.book');
-})->name('book')->middleware('CheckLogin');
+
 
 Route::get('profile', function () {
     return view('front.profile');

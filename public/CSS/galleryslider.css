@@ -38,20 +38,26 @@
 }
 
 @keyframes slide {
-    20% {
+    14% {
         background: url("../images/Slide/Dr1.jpeg");
     }
-    40% {
+    28% {
         background: url("../images/Slide/Dr2.jpeg");
     }
-    60% {
+    42% {
         background: url("../images/Slide/Dr.7.jpeg");
     }
-    80% {
+    56% {
         background: url("../images/Slide/Dr5.jpeg");
     }
-    100% {
+    70% {
         background: url("../images/Slide/Dr6.jpeg");
+    }
+    84% {
+        background: url("../images/Slide/Dr8.jpeg");
+    }
+    100% {
+        background: url("../images/Slide/Dr9.jpeg");
     }
 }
 

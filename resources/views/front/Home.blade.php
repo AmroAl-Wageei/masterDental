@@ -86,7 +86,7 @@
 
     <div class="fixed_nav" >
     <ul>
-    <li><a href="{{route('book')}}">
+    <li><a href="{{ route('user.booking.index') }}">
 
     <span> Book Now</span> <i class="fa-solid fa-book-medical"></i>
 
@@ -94,7 +94,7 @@
     <li><a href="{{route('contact')}}">
     <span> Call Now</span>  <i class="fa-solid fa-phone-volume" style="margin-right: 20px"></i>
     </a></li>
-    {{-- <li><a href="{{route('book')}}">
+    {{-- <li><a href="{{ route('user.booking.index') }}">
     <i class="fa-duotone fa-phone-volume"></i> <span> Book Now </span>
     </a></li>
     <li><a href="{{route('contact')}}">
@@ -120,14 +120,14 @@
     <div class="slide-content">
     <h1>Welcome To <span> Dr. Abdalmajed's </span>  <br>Dental Clinic</h1>
     <p>We are committed to providing you with the best dental care possible. Our team of experienced professionals use the latest technology and techniques to ensure that you have a healthy, beautiful smile.</p>
-   <a href="{{route('book')}}"> <button> Book An Appointment </button></a>
+   <a href="{{ route('user.booking.index') }}"> <button> Book An Appointment </button></a>
     </div>
     </div>
     <div class="slidee slide-2">
     <div class="slide-content">
     <h1>Transform Your  <span>Smile</span> Today</h1>
     <p>Are you unhappy with your smile? Our clinic offers a range of cosmetic dentistry services, including teeth whitening, veneers, and more. Schedule a consultation today to learn how we can help you achieve the smile of your dreams.</p>
-    <a href="{{route('book')}}"><button>Explore Our Services</button></a>
+    <a href="{{ route('user.booking.index') }}"><button>Explore Our Services</button></a>
     </div>
     </div>
     <div class="slidee slide-3">
@@ -135,7 +135,7 @@
     <h1>Emergency Dental<span>Care</span>  <br>When You Need It</h1>
     <p>Dental emergencies can happen at any time. Our clinic offers same-day emergency appointments to ensure that you receive the care you need as soon as possible. Contact us now to schedule an emergency appointment.</p>
 
-    <a href="{{route('book')}}"><button>Request Emergency Care</button></a>
+    <a href="{{ route('user.booking.index') }}"><button>Request Emergency Care</button></a>
     </div>
     </div>
     </div>
@@ -189,7 +189,7 @@
     <p> <strong>With nearly <span>25 years of experience</span> </strong>, including serving as the former director of Princess Haya Hospital and as a retired dean of the Jordanian Armed Forces, he brings a wealth of knowledge and expertise to his practice. Dr. Shandaq and his team use state-of-the-art technology and the latest techniques to ensure that patients receive the best possible treatment. Whether you're in need of a routine check-up or a more complex procedure, you can trust Dr. Shandaq and his team to provide you with the highest level of care.<strong> Contact us today to schedule your appointment and start your journey towards a healthier, happier smile.</strong> </p>
     <div class="btn_dr">
     <a href=".{{route('about')}}"></a><button type="button"> Our Team </button>
-    <a href="{{route('book')}}"><button type="button" class="btn2"> Book Now </button></a>
+    <a href="{{ route('user.booking.index') }}"><button type="button" class="btn2"> Book Now </button></a>
     </div>
     </div>
     </div>
@@ -329,7 +329,7 @@
 
     <h2> Be kind to your dentist. Because he has “fillings” too.<br> Be the reason someone <span> SMILES</span> today!
     </h2>
-    <a href="{{route('book')}}" class="action_btn"> Book Now </a>
+    <a href="{{ route('user.booking.index') }}" class="action_btn"> Book Now </a>
     </section>
 
 <!-- End Call to action book  -->
@@ -369,7 +369,7 @@
         </div>
     </form>
     <div class="old_Patient">
-        Not a Trainee? <a href="{{route('book')}}"> 
+        Not a Trainee? <a href="{{ route('user.booking.index') }}"> 
             Book Now
         </a>
     </div>
