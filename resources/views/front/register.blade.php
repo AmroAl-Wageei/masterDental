@@ -31,9 +31,38 @@
     background-repeat: no-repeat;
     background-size:cover; 
     height: 60vh;
-    width: 90vw;
+    width: 80vw;
+
+    display: flex;
+        align-items: center;
+        justify-content: center
     }
 
+
+    body {
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position:  center center;
+        min-height: 100vh;
+        max-width: 100%;
+  }
+  
+  @media (max-width : 767px) {
+    body {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+
+  max-width: 100%;
+  }
+  .Form_register {
+    width: 290px;
+    margin: 10% 1%;
+}
+  }
 
  </style>
 

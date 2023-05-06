@@ -29,6 +29,31 @@
         background-size:cover; 
         height: 60vh;
         width: 90vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center
+
+    }
+
+  @media (min-width : 768px) {
+    body {
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position:  center center;
+        min-height: 100vh;
+        max-width: 100%;
+  }
+  }
+  @media (max-width : 767px) {
+    body {
+
+ min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px
+  }
   }
 </style>
 <body>
