@@ -45,6 +45,8 @@
         @if(Auth::user())
           <a href="{{ route('user.login.destroy') }}" id="navr">LOGOUT</a>
           <a href="{{ route('user.profile.index') }}" id="navr"><abbr title="User Profile"><i class="fa-solid fa-user"></i></abbr></a>
+          {{-- <a href="{{ route('user.profile.index') }}" id="navr">       <img src="{{asset("storage/image/".auth()->user()->image)}}" alt="UserImage" class="user-p"> --}}
+          </a>
         @else 
           <a href="{{ route('register') }}" id="navr">Sign Up</a>
           <a href="{{ route('login') }}" id="navr">Sign In</a>

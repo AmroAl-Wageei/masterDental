@@ -116,6 +116,9 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::resource('/contact', ContactController::class);
     Route::resource('/trainee', TraineeController::class);
     Route::resource('/booking', BookController::class);
+
+
+    
     Route::resource('/profile', ProfileController::class);
 
 

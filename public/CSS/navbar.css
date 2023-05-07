@@ -15,7 +15,7 @@
     float: none;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -128,7 +128,9 @@ html {
 .icon {
     margin-left: 10px;
 }
-
+/* .user-p {
+    width: 17px;
+} */
 @media screen and (max-width: 550px) {
     .logo img {
         display: none;

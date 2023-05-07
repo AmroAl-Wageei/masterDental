@@ -48,21 +48,58 @@
 
 
 
+<div class="box-profile">
+  {{-- <div class="container">
+
+    <div class="image">
+      <img src="{{asset("storage/image/".auth()->user()->image)}}" alt="UserImage">
+    </div>
+
+    <div class="info">
+      <ul>
+        <span>User Name  </span><li>{{auth()->user()->name}}</li>
+        <span>Phone Number  </span><li>{{auth()->user()->phone}}</li>
+          <span>Email Address  </span><li>{{auth()->user()->email}}</li>
 
 
+      </ul>
+    </div>
+    
+    <div class="edit-profile">
+      <button type="submit">Edit Profile</button>
 
+    </div>
+  </div> --}}
+  <div class="card">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="card-inner">
+  
+      <div class="image">
+        <img src="{{asset("storage/image/".auth()->user()->image)}}" alt="UserImage">
+      </div>
+      <div class="info">
+        <ul>
+           <li> <span> <i class="fa-solid fa-signature"></i></span>{{auth()->user()->name}}</li>
+          <li><span> <i class="fa-solid fa-phone"></i></span>{{auth()->user()->phone}}</li>
+          <li><span> <i class="fa-solid fa-envelope"></i></span>{{auth()->user()->email}}</li>
+      </ul>
+      </div>
+    
+      <div class="btn">
+        <button type="submit">Edit Profile</button>
+      </div>
+    </div>
+  </div>
+ <h1>All Reservation</h1>
 
-
-{{-- Table Reservation --}}
-
-<h1>All Reservation</h1>
-<div class="table-layout">
+  <div class="table-layout">
     <div class="table-container">
       <table class="content-table">
         <thead>
           <tr>
             <th> Service Name</th>
-            <th> Service Image</th>
+            {{-- <th> Service Image</th> --}}
             <th> Price</th>
             <th> Status</th>
             <th> Res Date</th>
@@ -72,10 +109,10 @@
           @foreach ($reservations as $reservation)
           <tr class="active-row ">
             <td>{{$reservation->service->name}}</td>
-            <td>
+            {{-- <td>
               <?php $image =$reservation->service->image ?>
               <img src="{{URL::asset("storage/image/$image")}}" alt="image" />
-            </td>
+            </td> --}}
             <td>{{$reservation->service->price}}</td>
             <td>{{$reservation->status}}</td>
             <td>{{$reservation->res_date}}</td>
@@ -86,10 +123,13 @@
     </div>
   </div>
   
-<div class="container_profile">
+</div>
 
 
-    {{-- <div class="box">
+
+
+{{-- 
+    <div class="box">
         <img src="{{asset("storage/image/".auth()->user()->image)}}" alt="UserImage">
         <ul>
             <li>{{auth()->user()->name}}</li>
@@ -105,7 +145,13 @@
         </ul>
     </div> --}}
 
-</div>
+
+
+
+{{-- Table Reservation --}}
+
+
+
 
 
 {{-- Table Reservation --}}
