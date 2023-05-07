@@ -1,0 +1,166 @@
+
+/* ################################################################ */
+
+/*  About Dr */
+
+.about_dr {
+    height: 100vh;
+    max-width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_dr img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.all-text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.main_dr {
+    width: 1390px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-text h4 {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    color: #777777;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.all-text h2 {
+    font-size: 40px;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.all-text p {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    color: #777777;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.all-text p span {
+    font-size: 22px;
+    color: #74a7a1;
+    font-style: italic;
+}
+.btn_dr button {
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    margin-right: 20px;
+}
+.btn_dr button:hover {
+    background-color: #608ea5;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn_dr .btn2 {
+    background-color: #111111;
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    .about_dr {
+        height: auto;
+        width: 100%;
+        padding: 60px 0;
+        margin-top: 50px;
+    }
+
+    .all-text {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .all-text p {
+        font-size: 14px;
+    }
+    .btn_dr button {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main_dr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main_dr img {
+        max-width: 100%;
+        width: 300px;
+    }
+    .all-text h4 {
+        font-size: 14px;
+    }
+    .all-text h1 {
+        font-size: 40px;
+    }
+    .all-text p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .all-text h1 {
+        font-size: 40px;
+        color: #111111;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .all-text h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .all-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .main_dr img {
+        max-width: 100%;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .all-text h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 330px) {
+    .main_dr img {
+        max-width: 100%;
+        width: 150px;
+    }
+}
+
+/*  About Dr */
+
+/* ########################################################## */

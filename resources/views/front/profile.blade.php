@@ -12,6 +12,7 @@
     <title> User Profile </title>
 
 
+    
      <!-- Title Icon   -->
      <link rel="icon" href="../images/aamro.png" type="image/icon type" />
      <!-- Title Icon   -->

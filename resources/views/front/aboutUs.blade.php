@@ -66,37 +66,117 @@
 
 <!--  About Dr -->
 
-<section class="about_dr">
-    <div class="main_dr">
-        <img src="../images/header/About/AboutDr.jpg" alt="">
-        <div class="all-text">
-            <h4> Dr . Abdalmajed Shandaq</h4>
-            <h1>A certified dental surgeon locally and internationally.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit quis consequuntur alias? Debitis tempore minima suscipit corrupti corporis, doloremque optio placeat nihil ab ad dolore deserunt voluptatem est soluta.</p>
-            <div class="btn_dr">
-                <a href="#Team"><button type="button"> Our Team </button></a>
-                <button type="button" class="btn2"> Learn More </button>
-            </div>
-        </div>
-    </div>
-</section>
+@include('front.duplicate.dr')
 
 <!--  About Dr -->
 
 
 
+<!--  Our Vission and Mission -->
+
+<div class="vission">
+
+
+    <div class="vission_name">
+        <h3> The <i>VISION</i>  and <i>MISSION</i>  </h3>
+    </div>
+
+
+    <div class="vission_body">
+
+
+        <div class="mission1">
+        
+            <div class="part1">
+                <h2> VISION </h2>
+                <p> best example of what is possible in dentistry.</p>
+            </div>
+    
+            <div class="part2">
+                <h2> MISSION </h2>
+                <p>We aim to deliver a patient-focused & quality dental services in a safe & friendly environment by ambitious staff, committed to continuously develop their skills, and to serve our community through educational programs in dentistry.
+
+                    <br> <br>
+
+                    The design of the clinic was well thought of, the colors, the glass surfaces and the lighting all designed with caution to guarantee an extra ordinary experience.
+
+                    <br> <br>
+
+                    We are committed to providing quality dental care to our patients with love. We provide comprehensive solutions for our patients’ oral health needs. Believing in the importance of listening, as we take the time to understand their objectives and provide solutions to transform their smile into something healthy, bright and beautiful.
+                </p>
+            </div>
+        
+        </div>
+    
+        <div class="mission2"> 
+    
+            <div class="img one"> 
+                <img src="{{asset('images/header/About/vission.jpg')}} " alt="VissionOne">
+            </div>
+            <div></div>
+    
+            <div></div>
+
+            <div class="img two">
+                <img src="{{asset('images/header/About/vission1.png')}}" alt="VissionTwo">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>
 
 <!--  Our Vission and Mission -->
 
-@include('front.duplicate.vission')
-
-<!--  Our Vission and Mission -->
 
 
+<!-- Services  -->
+
+<div class="services show">
+    <h2>Our Services</h2>
+
+    <div class="cen"></div>
+
+    <div class="servicee">
+        <i class="fa-solid fa-route"></i>        <h3>Teeth Cleaning</h3>
+        <p>Removes plaque and tartar buildup to keep teeth and gums healthy.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-teeth-open"></i>        <h3>Fillings</h3>
+        <p>Repairs decayed or damaged teeth with a tooth-colored composite material.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-recycle"></i>        <h3>Extractions</h3>
+        <p>Removes severely damaged or painful teeth that cannot be saved.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-tooth"></i>        <h3>Root Canals</h3>
+        <p>Treats infected or inflamed tooth pulp to save a damaged tooth.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-house-chimney-medical"></i>
+            <h3>Dental Implants</h3>
+        <p>Replaces missing teeth with a permanent, natural-looking tooth replacement.</p>
+    </div>
+    <div class="servicee">
+        <i class="fa-solid fa-teeth"></i>      
+          <h3>Teeth Whitening</h3>
+        <p>Brightens teeth and removes stains for a whiter, brighter smile.</p>
+    </div>
+
+</div>
+
+<!-- Services  -->
 
 <!--  Our Story -->
 
-<div class="story">
+{{-- <div class="story">
 
     <div> 
         <img src="./images/about/Team.png" alt="teamAbout">
@@ -117,7 +197,7 @@
         <p id="drname"> Dr . Abd Shandaq </p>
         <h4 id="drpos"> Master of Dentistry </h4>
     </div>
-</div>
+</div> --}}
 
 <!-- End Our Story -->
 
@@ -168,6 +248,7 @@
 
 
 {{-- Our Team --}}
+<div class="our_team" id="Team">
 
 <div class="container-team">
     
@@ -270,6 +351,7 @@
 
       </div>
 </div>
+</div>
 
 
 
@@ -283,15 +365,14 @@
 <!-- Slides Section -->
 
 <div class="container_slide_about">
-
-    <div class="sliderr"> </div>
-
+    <div class="sliderr"></div>
+    
     <div class="sliderr1">
-        <h2> Gallery </h2>
+        <h2>Gallery</h2>
         <p>
             Discover a New Level of Dental Care with Dr. Abdalmajed <br> Affordable and Effective Solutions for All Your Dental Needs.
         </p>
-                <div class="dott">
+        <div class="dott">
             <span></span>
             <span></span>
             <span></span>
@@ -299,8 +380,7 @@
             <span></span>
         </div>
     </div>
-
-</div>
+</div> 
 
 <!-- End Slides Section -->
 

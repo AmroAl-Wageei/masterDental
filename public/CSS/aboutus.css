@@ -552,7 +552,7 @@ nav img {
 .sliderr {
     width: 50%;
     height: 50vh;
-    background: url("../images/Slide/Dr.7.jpeg");
+    background: url("../images/Slide/Dr9.jpeg");
     margin: 10% 0%;
     animation: slide 15s infinite;
     border-radius: 20px;
@@ -584,20 +584,26 @@ nav img {
 }
 
 @keyframes slide {
-    20% {
+    14% {
         background: url("../images/Slide/Dr1.jpeg");
     }
-    40% {
+    28% {
         background: url("../images/Slide/Dr2.jpeg");
     }
-    60% {
+    42% {
         background: url("../images/Slide/Dr.7.jpeg");
     }
-    80% {
+    56% {
         background: url("../images/Slide/Dr5.jpeg");
     }
-    100% {
+    70% {
         background: url("../images/Slide/Dr6.jpeg");
+    }
+    80% {
+        background: url("../images/Slide/Dr8.jpeg");
+    }
+    100% {
+        background: url("../images/Slide/Dr9.jpeg");
     }
 }
 
@@ -853,3 +859,272 @@ nav img {
     margin-left: 10px;
 }
 /* ######################################################## */
+/* ################################################################ */
+
+/* Our Vission and Mission  */
+
+.vission {
+    display: grid;
+    margin-bottom: 60px;
+}
+.vission_name {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+.vission_name h3::after {
+    content: "";
+    background: #74a7a1;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.vission_name h3 i {
+    font-size: 30px;
+    color: #74a7a1;
+}
+
+.vission_body {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin: 10% 0%;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.mission2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+
+.mission2 .img .one {
+    float: left;
+}
+.mission2 .img .two {
+    margin-left: 100%;
+}
+.mission2 .img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #74a7a1;
+}
+.mission2 .img img:hover {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #74a7a1;
+    transition: 0.5s;
+}
+.mission1 {
+    margin-top: 50px;
+}
+
+.mission1 .part1 {
+    margin-bottom: 100px;
+}
+.mission1 .part1 h2 {
+    margin-bottom: 15px;
+    color: #74a7a1;
+}
+.mission1 .part1,
+.part2 p {
+    color: #777777;
+}
+.mission1 .part2 h2 {
+    margin-bottom: 15px;
+    color: #74a7a1;
+}
+
+@media screen and (max-width: 980px) {
+    .vission_body {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        margin: 10% 0%;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .mission1 .part1 {
+        margin-bottom: 100px;
+    }
+    .mission1 .part1 h2 {
+        margin-bottom: 15px;
+        color: #74a7a1;
+    }
+    .mission2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mission2 .img .one {
+        float: right;
+    }
+    .mission2 .img .two {
+        float: right;
+    }
+    .mission2 .img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #74a7a1;
+    }
+    .mission2 .img img:hover {
+        width: 140px;
+        height: 140px;
+        border: 3px solid #74a7a1;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .vission_name {
+        margin: 0;
+    }
+    .vission_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .mission2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mission1 {
+        text-align: center;
+        margin: 0 15% 100px 15%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .mission1 {
+        text-align: center;
+        margin: 0 15% 100px 15%;
+    }
+    .mission1 .part1,
+    .part2 p {
+        font-size: 14px;
+    }
+    .mission2 .img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #74a7a1;
+    }
+    .mission2 .img img:hover {
+        width: 120px;
+        height: 120px;
+        border: 3px solid #74a7a1;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mission2 .img img {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* End Our Vission and Mission  */
+
+/* ################################################################ */
+
+/* ################################################################ */
+
+/* Services Section */
+
+.services {
+    text-align: center;
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+}
+.services h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 100px;
+    color: #348677;
+}
+.cen {
+    max-width: 200px;
+    margin: 0 auto 50px auto;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 3px solid #348677;
+}
+.servicee {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3 - 50px);
+    height: 240px;
+    margin: 0 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.servicee:hover {
+    background: #cac8c8;
+}
+.servicee i {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #74a7a1;
+}
+.servicee h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+.servicee p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.servicee:hover {
+    background: #74a7a1;
+    color: rgb(0, 0, 0);
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.servicee:hover i {
+    color: #fff;
+}
+@media (max-width: 900px) {
+    .servicee {
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .servicee {
+        width: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .services {
+        overflow: hidden;
+    }
+}
+/* Services Section */

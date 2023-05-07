@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Profile;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,6 @@ class ProfileController extends Controller
         $id = auth()->user()->id;
         $reservations = Reservation::where('user_id', $id)->get();
         return view('front.profile', ['reservations' => $reservations]);
-
     }
 
     /**
@@ -49,7 +49,10 @@ class ProfileController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        // return $id;
+        // dd("profile");
+        // $profile = Profile::find($id);
+        // return $profile;
     }
 
     /**
