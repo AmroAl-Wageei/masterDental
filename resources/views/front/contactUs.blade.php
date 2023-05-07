@@ -50,8 +50,8 @@
 <section class="header">
     <div class="text_header_book">
         <h1> <span> CONTACT </span> US  </h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas laboriosam non aliquam adipisci praesentium distinctio eos!<br><br>
-            Quidem voluptates ipsa quasi rerum, distinctio inventore odit incidunt vitae quae tenetur, fugiat ipsam? <br><br>
+        <p> Your perfect smile starts here at Abdalmajed Dental Clinic.<br><br>
+            Smile with confidence at Abdalmajed Dental Clinic! <br><br>
            <span> Get in Touch with Us </span>  </p>
         <a href="#Find" class="actionnn_btn"> Find Us </a>
     </div>
@@ -86,7 +86,7 @@
             <div class="info_box">
                 <span><i class="fa-solid fa-at"></i></span>
                 <span>  Email </span>
-                <span class="text"> shandaq@gmail.com</span>
+                <span class="text"> info@dental.com</span>
             </div>
 
             <div class="info_box">

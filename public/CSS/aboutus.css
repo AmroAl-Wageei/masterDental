@@ -673,3 +673,183 @@ nav img {
 /* End Scroll bar */
 
 /* ################################################################ */
+
+/* <!-- Transform Visibilty --> */
+
+.container-team {
+    text-align: center;
+}
+.container-team h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 100px;
+    color: #348677;
+}
+.container-team .cen {
+    max-width: 200px;
+    margin: 0 auto 50px auto;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 3px solid #348677;
+}
+.container {
+    margin: 10px auto;
+    max-width: 100%;
+    width: 90%;
+    perspective: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-content: space-ev;
+    gap: 20px;
+}
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    transform-origin: center center;
+}
+.box:hover {
+    transform: translateX(10%) rotatey(180deg);
+    -webkit-transform: translateX(10%) rotatey(180deg);
+    -moz-transform: translateX(10%) rotatey(180deg);
+    -ms-transform: translateX(10%) rotatey(180deg);
+    -o-transform: translateX(10%) rotatey(180deg);
+}
+
+.back h2 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+.back h2 span {
+    text-align: center;
+}
+.back p {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+.box .face {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: bold;
+    font-size: 30px;
+    color: #eee;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+/* .box .front {
+    background-color: red;
+  } */
+.box .front img {
+    width: 195px;
+    height: 210px;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    border: 5px solid #74a7a1;
+}
+.box .back {
+    width: 230px;
+    height: 230px;
+    /* background-image: url("../Images/aamro.png"); */
+    background-color: #74a7a1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bold; */
+    font-size: 10px;
+    margin: 5%;
+    transition: 0.2s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    opacity: 0.9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /*transform-origin: center center;
+    */ /*transform-origin: right bottom;
+    */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+@media (max-width: 767px) {
+    .box .back {
+        width: 170px;
+        height: 170px;
+    }
+    .social {
+        display: none;
+    }
+    .box .front img {
+        width: 170px;
+        height: 170px;
+    }
+}
+.box .back::before {
+    content: "";
+    opacity: 0.5;
+}
+
+/* <!-- Transform Visibilty --> */
+.icon {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(92, 82, 82, 0.3) !important;
+    color: rgb(255, 255, 255) !important;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+.icon:hover {
+    cursor: pointer;
+    background-color: rgb(36, 46, 43) !important;
+    color: #ffffff !important;
+}
+.social i {
+    padding: 10px;
+}
+
+.icon {
+    margin-left: 10px;
+}
+/* ######################################################## */

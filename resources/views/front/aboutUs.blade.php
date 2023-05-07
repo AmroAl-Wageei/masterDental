@@ -169,11 +169,111 @@
 
 {{-- Our Team --}}
 
-<div class="teams">
+<div class="container-team">
+    
+
+    <h3>Our Team </h3>
+
+    <div class="cen"></div>
     <div class="container">
 
-    </div>
+
+        <div class="box">
+          <div class="face front">
+            <img src="../Images/about/Amro.png" alt="" />
+
+          </div>
+  
+          <div class="face back">
+            <h2>Amro Al-Wageei <br> <span>Web Developer</span></h2>
+  
+            <p>
+                Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100012890643589"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="https://www.instagram.com/shandaqamro7/"><i class="fab fa-instagram icon"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter icon"></i></a>
+               
+              </div>
+          </div>
+        
+        </div>
+        <div class="box">
+          <div class="face front">
+            <img src="../Images/about/Amro.png" alt="" />
+
+          </div>
+  
+          <div class="face back">
+            <h2>Amro Al-Wageei <br> <span>Web Developer</span></h2>
+  
+            <p>
+                Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100012890643589"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="https://www.instagram.com/shandaqamro7/"><i class="fab fa-instagram icon"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter icon"></i></a>
+               
+              </div>
+          </div>
+        
+        </div>
+        <div class="box">
+          <div class="face front">
+            <img src="../Images/header/About/shahed.jpeg" alt="" />
+
+          </div>
+  
+          <div class="face back">
+            <h2>Shahed Ala'a <br> <span> Ui / UX </span></h2>
+  
+            <p>
+                Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100012890643589"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="https://www.instagram.com/shandaqamro7/"><i class="fab fa-instagram icon"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter icon"></i></a>
+               
+              </div>
+          </div>
+        
+        </div>
+        <div class="box">
+          <div class="face front">
+            <img src="../Images/about/Amro.png" alt="" />
+
+          </div>
+  
+          <div class="face back">
+            <h2>Amro Al-Wageei <br> <span>Web Developer</span></h2>
+  
+            <p>
+                Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100012890643589"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="https://www.instagram.com/shandaqamro7/"><i class="fab fa-instagram icon"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter icon"></i></a>
+               
+              </div>
+          </div>
+        
+        </div>
+
+
+
+
+
+
+      </div>
 </div>
+
+
+
+      <!-- Tranform Visibility -->
 {{-- Our Team --}}
 
 

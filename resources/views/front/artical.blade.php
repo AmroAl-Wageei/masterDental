@@ -122,17 +122,7 @@
         </div>
         <hr> 
 
-        <div class="catee_type">
-            <img src="../images/header/Artical/Artical1.jpg" alt="">
-            <a href="#" class="artical_name">Amro Salah Othman Al-Wageei</a>
-        </div>
-        <hr> 
-        
-        <div class="catee_type">
-            <img src="../images/header/Artical/Artical2.jpg" alt="">
-            <a href="#" class="artical_name">Amro Salah Othman Al-Wageei</a>
-        </div>
-        <hr>
+
 
 
     </div>
