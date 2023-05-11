@@ -111,7 +111,7 @@
         <div class="mission2"> 
     
             <div class="img one"> 
-                <img src="{{asset('images/header/About/vission.jpg')}} " alt="VissionOne">
+                <img src="{{asset('images/dr3.jpeg')}} " alt="VissionOne">
             </div>
             <div></div>
     
@@ -261,12 +261,12 @@
 
         <div class="box">
           <div class="face front">
-            <img src="../Images/about/Amro.png" alt="" />
+            <img src="{{asset('images/doc.jpg')}} " alt="VissionOne">
 
           </div>
   
           <div class="face back">
-            <h2>Amro Al-Wageei <br> <span>Web Developer</span></h2>
+            <h2 style="padding: 20px">Abdalmajed Shandaq <br> <span>Doctor</span></h2>
   
             <p>
                 Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.
@@ -324,12 +324,12 @@
         </div>
         <div class="box">
           <div class="face front">
-            <img src="../Images/about/Amro.png" alt="" />
+            <img src="{{asset('images/leen.jpeg')}} " alt="VissionOne">
 
           </div>
   
           <div class="face back">
-            <h2>Amro Al-Wageei <br> <span>Web Developer</span></h2>
+            <h2>Leen Al-Qaq <br> <span>Secretary</span></h2>
   
             <p>
                 Expert web developer with proficiency in front-end and back-end technologies, dedicated to delivering high-quality results.

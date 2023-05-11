@@ -112,6 +112,12 @@
         border-radius: 50%;
         border: 2px solid #74a7a1;
     }
+    /* .mission2 .img .one img {
+        width: 200px;
+        height: 300px;
+        border-radius: 50%;
+        border: 2px solid #74a7a1;
+    } */
     .mission2 .img img:hover {
         width: 140px;
         height: 140px;

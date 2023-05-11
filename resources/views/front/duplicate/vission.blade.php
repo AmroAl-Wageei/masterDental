@@ -42,7 +42,7 @@
         <div class="mission2"> 
     
             <div class="img one"> 
-                <img src="{{asset('images/header/About/vission.jpg')}} " alt="VissionOne">
+                <img src="{{asset('images/dr3.jpeg')}} " alt="VissionOne">
             </div>
             <div></div>
     
