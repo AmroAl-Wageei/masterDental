@@ -29,6 +29,32 @@
         body {
             font-family: 'Dosis', sans-serif;
         }
+
+        
+        .error {
+            background-color: rgba(218, 78, 78, 0.4);
+            padding-inline: 50px;
+            padding: 10px;
+            border-radius: 3px;
+            color: rgb(255, 255, 255);
+        }
+        .error:last-of-type {
+            margin-bottom: 20px;
+        }
+        
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
     </style>
 
 
@@ -91,6 +117,13 @@
 
         <div class="body_book">
     
+        @if(session()->get('success'))
+        <div class="success-msg">
+        <i class="fa fa-check"></i>
+
+        {{ session()->get('success') }}
+        </div>
+        @endif
     
             <div class="head_book" id="BookNow">
                 <h1>Dr. Abdalmajed Dental Clinic</h1>
@@ -107,7 +140,7 @@
                         <input type="text"  placeholder="Your Name" name="first_name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
                         <input type="hidden" class="form-control bg-transparent" id="name" placeholder="First Name" name="user_id" value="{{ Auth::user()->id }}">
                         @error('first_name')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
     
@@ -115,7 +148,7 @@
                         <p>Last Name</p>
                         <input type="text" placeholder="Last Name" name="last_name" value="{{ old('last_name')}}" class="@error('last_name') is-invalid @enderror">
                         @error('last_name')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
                  
@@ -127,14 +160,14 @@
                         <p>Email Address </p>
                         <input type="email" placeholder="Email Address" id="email"  name="email" value="{{ old('email')}}" class="@error('email') is-invalid @enderror">
                         @error('email')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
                     <div class="col-6">
                         <p>Phone Number </p>
                         <input type="text" placeholder="Phone Number" name="phoneNumber" value="{{ old('phoneNumber')}}" class="@error('phoneNumber') is-invalid @enderror">
                         @error('phoneNumber')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
                  
@@ -147,7 +180,7 @@
                         <input type="text"  class="form-control bg-transparent datetimepicker-input" id="date_picker" placeholder="Date" data-target="#date3" data-toggle="datetimepicker" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror" />
                         {{-- <input type="date"  id="date" name="res_date" value="{{ old('res_date')}}" class="@error('res_date') is-invalid @enderror"> --}}
                         @error('res_date')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
                     <div class="col-6">
@@ -160,7 +193,7 @@
                             @endforeach
                         </select>
                         @error('services_id')
-                        <div class="alert alert-danger">{{ $message }}</div>
+                        <div class="error">{{ $message }}</div>
                        @enderror
                     </div>
                 
@@ -245,7 +278,7 @@
     //     maxDate: '+28D',
     // });
     $( function() {
-    $( "#date_picker" ).datepicker({ minDate: 4, maxDate: "+1M" });
+    $( "#date_picker" ).datepicker({ minDate: 1, maxDate: "+1M" });
   } );
         
     </script>

@@ -28,6 +28,31 @@
         body {
             font-family: 'Dosis', sans-serif !important;
         }
+
+        .error {
+            background-color: rgba(244, 132, 132,0.4);
+            padding-inline: 50px;
+            padding: 20px;
+            border-radius: 3px;
+            color: rgb(79, 76, 76);
+        }
+        .error:last-of-type {
+            margin-bottom: 20px;
+        }
+        
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
     </style>
 
 
@@ -103,13 +128,22 @@
         </div>
 
 
+        
+@if(session()->get('success'))
+<div class="success-msg">
+    <i class="fa fa-check"></i>
+
+    {{ session()->get('success') }}
+</div>
+@endif
+
         <div class="contact_form">
             <form action="{{route('user.contact.store')}}" method="post">
                 {{-- @method('HEAD') --}}
 				@csrf
 
             <div>
-                <input type="text"  class="form_control" name="first_name" id="fname" placeholder="First Name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror">
+                <input type="text"  class="form_control" name="first_name" id="fname" placeholder="First Name" value="{{ old('first_name')}}" class="@error('first_name') is-invalid @enderror" autofocus>
                 @error('first_name')
                 <div class="error">{{ $message }}</div>
             @enderror

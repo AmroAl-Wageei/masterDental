@@ -20,7 +20,7 @@
             </div>
         </div>
 
-      <p class="card-description"> Add class <code>.table-striped</code>
+      {{-- <p class="card-description"> Add class <code>.table-striped</code> --}}
       </p>
       <table class="table table-striped">
         <thead>

@@ -137,7 +137,7 @@
     </div>
   </div>
 
-  <div class="row">
+  {{-- <div class="row">
     <div class="col-md-7 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
@@ -154,14 +154,14 @@
         <div class="card-body">
           <h4 class="card-title"> Reservation Analysis </h4>
           {{-- <p>{{$totalAllUser}}</p> --}}
-          <canvas id="ProductChart"></canvas>
+          {{-- <canvas id="ProductChart"></canvas>
           <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
         </div>
       </div>
     </div>
-  </div>
+  </div> - --}}
 
-  <div class="row">
+  {{-- <div class="row">
     <div class="col-12 grid-margin">
       <div class="card">
         <div class="card-body">
@@ -228,9 +228,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
-  <div class="row">
+  {{-- <div class="row">
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
@@ -268,10 +268,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
-  <div class="row">
-    <div class="col-md-7 grid-margin stretch-card">
+  {{-- <div class="row"> --}}
+    {{-- <div class="col-md-7 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Project Status</h4>
@@ -351,7 +351,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     {{-- <div class="col-md-5 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">

@@ -65,7 +65,7 @@ class BookController extends Controller
             'price' => $price,
 
         ]);
-        return redirect()->route('home')->with('success', 'Reservation Successful,thank you for booking.');
+        return redirect()->route('user.profile.index')->with('success', 'Reservation Successfull,thank you for booking.');
     }
 
     /**

@@ -8,7 +8,7 @@
     <meta name="author" content=" Amro Salah Al - Wageei">
     <meta name="keywords" content="dentist, clinic, Aqaba, Jordan, braces, dental care">    
     <meta name="copyright" content="Orange Coding Academy. All rights reserved.">
-    <meta http-equiv="refresh" content="60">
+    {{-- <meta http-equiv="refresh" content="60"> --}}
     {{-- <meta http-equiv="refresh" content="1;url=https://amroal-wageei.github.io/masterDental/"> --}}
     <title> Home Page </title>
 
@@ -61,10 +61,31 @@
         font-family: "Dosis", sans-serif;
       }
 
+      .error {
+            background-color: rgba(244, 132, 132,0.4);
+            padding-inline: 50px;
+            padding: 20px;
+            border-radius: 3px;
+            color: rgb(79, 76, 76);
+        }
+        .error:last-of-type {
+            margin-bottom: 20px;
+        }
+        
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
     </style>
-
-
-
 
 
 </head>
@@ -185,10 +206,10 @@
     <img src=" {{asset('images/header/About/AboutDr.jpg')}}" alt="">
     <div class="all-text">
     <h4> Dr . Abdalmajed Shandaq</h4>
-    <h2>Is a highly skilled and certified deantal surgeon, both locally and internationally</h2>
+    <h2>Is a highly skilled and certified dental surgeon, both locally and internationally</h2>
     <p> <strong>With nearly <span>25 years of experience</span> </strong>, including serving as the former director of Princess Haya Hospital and as a retired dean of the Jordanian Armed Forces, he brings a wealth of knowledge and expertise to his practice. Dr. Shandaq and his team use state-of-the-art technology and the latest techniques to ensure that patients receive the best possible treatment. Whether you're in need of a routine check-up or a more complex procedure, you can trust Dr. Shandaq and his team to provide you with the highest level of care.<strong> Contact us today to schedule your appointment and start your journey towards a healthier, happier smile.</strong> </p>
     <div class="btn_dr">
-    <a href=".{{route('about')}}"></a><button type="button"> Our Team </button>
+    <a href="{{route('about')}}"><button type="button"> Our Team </button></a>
     <a href="{{ route('user.booking.index') }}"><button type="button" class="btn2"> Book Now </button></a>
     </div>
     </div>
@@ -338,6 +359,9 @@
 
 <!--  New Patient  -->
 
+
+
+
     <div class="container_book">
 
 
@@ -367,6 +391,14 @@
         <div class="btn_book">
             <button type="submit">Send Request</button>
         </div>
+{{-- 
+        @if(session()->get('success'))
+        <div class="success-msg">
+            <i class="fa fa-check"></i>
+        
+            {{ session()->get('success') }}
+        </div>
+        @endif --}}
     </form>
     <div class="old_Patient">
         Not a Trainee? <a href="{{ route('user.booking.index') }}"> 
@@ -374,9 +406,19 @@
         </a>
     </div>
 
-    </div>
+    
+
 
     </div>
+    @if(session()->get('success'))
+    <div class="success-msg">
+        <i class="fa fa-check"></i>
+    
+        {{ session()->get('success') }}
+    </div>
+    @endif
+    </div>
+
     </div>
 
     </div>

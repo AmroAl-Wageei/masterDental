@@ -12,7 +12,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Contact Form Table</h4>
-      <p class="card-description"> Add class <code>.table-striped</code>
+      {{-- <p class="card-description"> Add class <code>.table-striped</code> --}}
       </p>
       <table class="table table-striped">
         <thead>

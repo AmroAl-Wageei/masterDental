@@ -15,9 +15,9 @@
 
             <h4 class="card-title">All Reservation Table</h4>
         </div>
-
+{{-- 
       <p class="card-description"> Add class <code>.table-striped</code>
-      </p>
+      </p> --}}
 
 
 {{-- {{dd($reservations)}} --}}
@@ -28,11 +28,11 @@
 
                   <div class="row">
                     <div class="col-lg-12 grid-margin stretch-card">
-                      <div class="card">
+                      {{-- <div class="card">
                         <div class="card-body">
                           <h4 class="card-title">Basic Table</h4>
                           <p class="card-description"> Add class <code>.table</code>
-                          </p>
+                          </p> --}}
                           <table class="table">
                             <thead>
                               <tr>

@@ -16,9 +16,16 @@
             <h4 class="card-title">Edit Reservation </h4>
         </div>
 
-      <p class="card-description"> Add class <code>.table-striped</code>
+      {{-- <p class="card-description"> Add class <code>.table-striped</code> --}}
       </p>
 
+      
+
+
+      
+
+
+      
       <form method="POST" action="{{Route('admin.reservation.update',$data->id)}}" >
         @method('PUT')
         @csrf
@@ -29,7 +36,7 @@
             <option value="Rejected">Rejected</option>
         </select>
 
-        <button type="submit">edit</button>
+        <button type="submit" style="background: red; border:none; padd">edit</button>
       </form>
 
 

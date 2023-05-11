@@ -45,7 +45,7 @@ class TraineeController extends Controller
 
         ]);
 
-        return redirect()->route('home');
+        return redirect()->route('home')->with('success', 'Thank you for your interest in our training program! We have received your request and one of our team members will review it shortly.');
     }
 
     /**

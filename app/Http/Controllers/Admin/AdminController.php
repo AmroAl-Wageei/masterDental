@@ -14,6 +14,7 @@ class AdminController extends Controller
     /**
      * Display a listing of the resource.
      */
+    
     public function index()
     {
         $data=User::where('role','admin')->get();

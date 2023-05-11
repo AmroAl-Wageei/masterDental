@@ -36,7 +36,7 @@
   
       <div class="topnav" id="myTopnav">
         <a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
-        <a href="{{ route('soon') }}" class="{{ request()->is('soon') ? 'active' : '' }}">Coming Soon</a>
+        {{-- <a href="{{ route('soon') }}" class="{{ request()->is('soon') ? 'active' : '' }}">Coming Soon</a> --}}
         <a href="{{ route('about') }}" class="{{ request()->is('about') ? 'active' : '' }}">About Us</a>
         <a href="{{ route('contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
         {{-- <a href="{{ route('profile') }}" class="{{ request()->is('profile') ? 'active' : '' }}">Services</a> --}}

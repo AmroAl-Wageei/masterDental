@@ -35,7 +35,7 @@ class ContactController extends Controller
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'phone' => ['required', 'max:10'],
+            'phone' => ['required', 'min:10'],
             'message' => ['required','string'],
         ]);
         Contact::create([
@@ -47,7 +47,7 @@ class ContactController extends Controller
 
         ]);
 
-        return redirect()->route('contact');
+        return redirect()->route('contact')->with('success', ' Thank you for contacting us. We will get back to you soon..');
     }
 
     /**

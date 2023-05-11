@@ -42,6 +42,7 @@ class ServicesController extends Controller
 
         $photoName = $request->file('image')->getClientOriginalName();
         $request->file('image')->storeAs('public/image', $photoName);
+        
         Service::create([
             'name' => $request->name,
             'description' => $request->description,
@@ -58,7 +59,8 @@ class ServicesController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // $singleData = Service::Where('id',$id)->first();
+        // return view('admin.services.detailsServices', compact('singleData'));
     }
 
     /**
