@@ -30,13 +30,13 @@
         @method('PUT')
         @csrf
 
-        <select name="status">
+        <select name="status" style="background: rgb(120, 167, 170); border:none; color : white; padding : 10px">
             <option value="Pending">Pending</option>
             <option value="Accepted">Accepted</option>
             <option value="Rejected">Rejected</option>
         </select>
 
-        <button type="submit" style="background: red; border:none; padd">edit</button>
+        <button type="submit" style="background: rgb(157, 95, 200); border:none; color : rgb(255, 255, 255); padding : 10px">Edit</button>
       </form>
 
 
